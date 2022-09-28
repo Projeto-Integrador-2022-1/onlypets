@@ -1,0 +1,40 @@
+.screen-size {
+    height: 1280px;
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo-load {
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    animation: fade 3s, size 10s ease-in-out alternate infinite;
+  }
+  .load {
+    border: 16px solid #3b6e61;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-top: 16px solid #bf702a; 
+    animation: spin 1s linear infinite;
+  }
+  .wait {
+    font-family: sans-serif;
+  }
+  
+  /* Animações */
+  @keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+  
+  @keyframes fade{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+  @keyframes size{
+    40%{transform: scale(95%);}
+    100%{transform: scale(100%);}
+  }
