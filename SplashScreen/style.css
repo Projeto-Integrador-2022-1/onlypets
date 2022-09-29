@@ -1,18 +1,26 @@
-.screen-size {
-    height: 1280px;
-    width: 720px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  .container__main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .logo-load {
+  .container__main--logo_load {
     justify-content: center;
     align-items: center;
     width: 480px;
     animation: fade 3s, size 10s ease-in-out alternate infinite;
   }
-  .load {
+  .container__main--load {
     border: 16px solid #3b6e61;
     border-radius: 50%;
     width: 50px;
@@ -20,7 +28,7 @@
     border-top: 16px solid #bf702a; 
     animation: spin 1s linear infinite;
   }
-  .wait {
+  .container__main--msg {
     font-family: sans-serif;
   }
   
