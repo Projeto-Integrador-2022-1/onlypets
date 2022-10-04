@@ -1,0 +1,41 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topo{
+width: 100vw;
+height: 187px;
+left: -1px;
+top: -5px;
+display: flex;
+align-items: center;
+
+background: #DBEEF2;
+}
+
+#user_name{
+position:relative;
+width: 155px;
+height: 28px;
+left: 80vw;
+top: -5vh;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.logo{
+position: relative;
+left: -100px;
+top: 10px;
+
+}
