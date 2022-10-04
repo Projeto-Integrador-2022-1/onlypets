@@ -117,3 +117,5 @@ input:focus,textarea:focus,select:focus{
     color: #3B6E61;
     cursor: pointer;;
 }
+a:link{text-decoration: none;}
+a{color: #A3D9C9;}
