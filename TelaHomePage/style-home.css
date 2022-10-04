@@ -39,3 +39,15 @@ left: -100px;
 top: 10px;
 
 }
+
+.corpo{
+position: relative;
+width: 1114px;
+height: 336px;
+left: calc(50% - 1114px/2 - 18px);
+top: 10vh;
+
+background: #7DBFCF;
+border: 3px solid #D9A330;
+border-radius: 0px 90px;
+}

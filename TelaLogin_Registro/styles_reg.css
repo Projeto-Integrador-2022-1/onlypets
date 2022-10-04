@@ -70,7 +70,7 @@ input:focus,textarea:focus,select:focus{
 
 }
 
-button {
+#cadastro {
     box-sizing: border-box;
     width: 266px;
     height: 66px;
@@ -88,7 +88,31 @@ button {
     text-align: center;
 }
 
-button:hover {
+#voltar {
+    box-sizing: border-box;
+    width: 266px;
+    height: 66px;
+    left: calc(50% - 266px/2);
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 40px;
+    color: #A3D9C9;
+    line-height: 66px;
+    background: #3B6E61;
+    border: 2px solid #D9A330;
+    backdrop-filter: blur(2px);
+    border-radius: 40px;
+    text-align: center;
+}
+
+#cadastro:hover {
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+#voltar:hover {
     background: #D9A330;
     color: #3B6E61;
     cursor: pointer;;
