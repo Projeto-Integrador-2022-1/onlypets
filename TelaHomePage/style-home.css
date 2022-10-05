@@ -1,16 +1,17 @@
-@media only screen and (max-device-width: 900px) {
-    
-}
 *{
     margin:  0;
     padding: 0;
     box-sizing: border-box;
 }
+.container__main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 .container__main--topo{
-width: 100vw;
+min-width: 100vw;
 height: 187px;
-left: -1px;
-top: -5px;
 display: flex;
 align-items: center;
 
@@ -30,7 +31,6 @@ font-size: 24px;
 line-height: 28px;
 display: flex;
 align-items: center;
-
 color: #000000;
 }
 
@@ -43,41 +43,39 @@ top: 10px;
 
 .container__main--bloco{
 position: relative;
-width: 1114px;
+min-width: 54vw;
 height: 350px;
-left: calc(50% - 1114px/2 - 18px);
 top: 10vh;
 background: #7DBFCF;
 border: 3px solid #D9A330;
 border-radius: 0px 90px;
+justify-content: space-between;
+align-items: center;
+display: flex;
 /* text-align: left; */
 }
 
 .texto{
 position: relative;
-left: 15vh;
-top: 10vh;
 font-size: large;
+left: 10px;
 }
 
 .imagem{
 width: fit-content;
 position: relative;
-left: 90vh;
-top: -10vh
 }
 
 .titulo{
-font-size:90px;
+font-size:50px;
 position: relative;
-left:5vh;
+bottom:-25vh;
 }
 
 .imagem1{
 width: fit-content;
 position: relative;
-top:31vh;
-left: 50vh;    
+top:31vh;   
 }
 
 .buscar{
