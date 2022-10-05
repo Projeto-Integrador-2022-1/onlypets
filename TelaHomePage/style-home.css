@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.topo{
+.container__main--topo{
 width: 100vw;
 height: 187px;
 left: -1px;
@@ -14,7 +14,7 @@ align-items: center;
 background: #DBEEF2;
 }
 
-#user_name{
+#container__main--topo--user_name{
 position:relative;
 width: 155px;
 height: 28px;
@@ -31,14 +31,14 @@ align-items: center;
 color: #000000;
 }
 
-.logo{
+.container__main--topo--logo{
 position: relative;
 left: -100px;
 top: 10px;
 
 }
 
-.bloco{
+.container__main--bloco{
 position: relative;
 width: 1114px;
 height: 336px;
