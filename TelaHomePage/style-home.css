@@ -41,21 +41,63 @@ top: 10px;
 .container__main--bloco{
 position: relative;
 width: 1114px;
-height: 336px;
+height: 350px;
 left: calc(50% - 1114px/2 - 18px);
 top: 10vh;
 background: #7DBFCF;
 border: 3px solid #D9A330;
 border-radius: 0px 90px;
+/* text-align: left; */
 }
 
-#frase_um{
+.texto{
 position: relative;
-align-items: center;
-text-align: center;
-color: #000000;
+left: 15vh;
+top: 10vh;
+font-size: large;
 }
 
-#para_um{
-    font-family: 'Josefin Sans';
+.imagem{
+width: fit-content;
+position: relative;
+left: 90vh;
+top: -10vh
+}
+
+.titulo{
+font-size:90px;
+position: relative;
+left:5vh;
+}
+
+.imagem1{
+width: fit-content;
+position: relative;
+top:31vh;
+left: 50vh;    
+}
+
+.buscar{
+box-sizing: border-box;
+position: relative;
+width: 400px;
+height: 100px;
+left: 15vh;
+top: -10vh;
+background: #3B6E61;
+border: 1.58991px solid #D9A330;
+border-radius: 35.0376px; 
+font-weight: 100px;
+font-size: 40px;
+font-family: Josefin Sans;
+font-style: normal;
+color: #A3D9C9;
+line-height: 66px;
+border: 2px solid #D9A330;   
+}
+
+.buscar:hover {
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
 }
