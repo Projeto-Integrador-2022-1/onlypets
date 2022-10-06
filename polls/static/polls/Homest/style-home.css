@@ -58,7 +58,7 @@ display: flex;
 .texto{
 position: relative;
 font-size: large;
-left: 10vh;
+left: 10px;
 }
 
 .imagem{
