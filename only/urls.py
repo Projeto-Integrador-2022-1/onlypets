@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from only.views import home
+from only.views import Splash,Homep,Login,Cadastro
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("",home,name="home"),
-    path("polls/",include('polls.urls')),
+    path('', Splash, name='splash'),
+    path("home/", Homep,name='home'),
+    path("login/", Login,name='login'),
+    path("cadastro/",Cadastro,name='cadastro'),
     path("admin/", admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

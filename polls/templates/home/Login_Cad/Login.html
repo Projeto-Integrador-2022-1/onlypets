@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+    {% load static %}
+<head> 
+<TITLE>LOGIN</TITLE>
+
+<link rel="stylesheet" href="{% static 'home/Loginst/styles.css' %}">
+
+
+</head>
+<body>
+<div class="container">
+
+    <div class="container__main">
+        <div class="container__main--login">
+            <div>
+               <img class= "container__main--login--logo" src="{% static 'home/Loginst/logo.svg' %}" alt="logo" width="100" height="100">
+            </div>
+            <div class="container__main--login--title">
+                ENTRAR
+            </div>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <a href="cadastro.html">Cadastre-se aqui</a>
+            <button>ACESSAR</button>
+        </div>
+        
+
+        <div class="container__main--animals">
+            <div>
+                <div class="container__main--animals--patas-bottom">
+                    <img src="{% static 'home/Loginst/patas.svg' %}" alt="img1" >
+                </div>
+            </div>
+            <div class="container__main--animals--pet-bottom">
+                <img src="{% static 'home/Loginst/golden-dog.svg' %}" alt="img1" >
+            </div>
+        </div>
+    </div>
+   
+
+</div>
+
+</body>
+</html>
