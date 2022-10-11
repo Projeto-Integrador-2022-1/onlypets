@@ -2,11 +2,14 @@
 name = "onlypets"
 version = "0.1.0"
 description = ""
-authors = ["LevySena <marcoslevysena10@gmail.com>"]
+authors = ["Levy"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+django = "^4.1.2"
+gunicorn = "^20.1.0"
+docker = "^6.0.0"
 
 
 [build-system]
