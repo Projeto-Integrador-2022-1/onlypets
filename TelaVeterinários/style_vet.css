@@ -13,8 +13,22 @@ align-items: center;
 
 background: #DBEEF2;
 }
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container__main{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
 #voltar{
+    position: absolute;
+    left:0px;
     background-color: #FFFFFF;
     border: none;
     height: 80px;

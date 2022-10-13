@@ -10,12 +10,13 @@
     flex-direction: column;
 }
 .container__main--topo{
-min-width: 100vw;
-height: 187px;
-display: flex;
-align-items: center;
-
-background: #DBEEF2;
+    width: 100vw;
+    height: 187px;
+    left: -1px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    background: #DBEEF2;
 }
 
 #container__main--topo--user_name{
