@@ -1,0 +1,67 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__main--topo{
+width: 100vw;
+height: 187px;
+left: -1px;
+top: -5px;
+display: flex;
+align-items: center;
+
+background: #DBEEF2;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container__main{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#voltar{
+    position: absolute;
+    left:0px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 80px;
+    width: 80px;
+}
+
+#voltar:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.placa{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    left: 0%;
+    top: 154.6px;
+    background: #88BEB8;
+    box-shadow: 0px 3.36px 3.36px rgba(0, 0, 0, 0.25);
+    border-radius: 10.92px;
+}
+
+.placa_texto{
+    position: relative;
+    width: 188.16px;
+    height: 36.12px;
+    left: 5px;
+    top: 40px;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
