@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+{% load static %}
+<head> 
+<TITLE>CLÍNICAS</TITLE>
+<link rel="stylesheet" href="{% static 'home/Clinicast/style_cli.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "container__main--topo--logo" src="{% static 'home/Clinicast/logocolorida.svg' %}" alt="logo" width="200" height="200">
+            </div>
+            <div class="container__main--login--button">
+                <a href="/home"><button  id="voltar"><img src="{% static 'home/Clinicast/seta_voltar.svg' %}"></button></a>
+            </div>
+            <div class="selecao">
+                <div class="clinica_um">
+                    <a href="../TelaVeterinários/slc_vet.html"> <button class="clinica_um_button"><img class="clinica_um_imagem" src="{% static 'home/Clinicast/logopetshop.svg' %}" alt="logo" width="81" height="81"><h1 class="animalzao">Animalzão : Pet Shop e Clínica </h1></button></a>
+                </div>
+            </div>
+        </div>
+    </div>           
+</body>
