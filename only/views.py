@@ -14,4 +14,7 @@ def Login(request):
 def Cadastro(request):
     return render(request,"home/Login_Cad/cadastro.html")
 
+def Clinica(request):
+    return render(request,"home/Clinica/clinicas.html")
+
 
