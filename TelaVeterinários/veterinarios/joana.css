@@ -140,3 +140,11 @@ background: #DBEEF2;
     left: -490px;
     top: 110px; 
 }
+
+.prosseguir{
+    position: relative;
+    width: 450px ;
+    height: 125px ;
+    top: 20vh;
+    left:3vh;
+}
