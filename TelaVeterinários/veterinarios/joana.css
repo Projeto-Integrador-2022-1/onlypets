@@ -39,3 +39,104 @@ background: #DBEEF2;
     color: #3B6E61;
     cursor: pointer;;
 }
+
+.nome{
+    position: relative;
+    top:10vh;   
+    left:-50px;
+    font-size: 40px;
+}
+
+.at_um{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+.atd_um input:checked {
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+.atd_dois input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+.atd_tres input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+.atd_quatro input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+.atd_cinco input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+
+.at_dois{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.at_tres{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.at_quatro{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.at_cinco{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.atd{
+    position: relative;
+    left: 0px;
+    top:15vh;
+    width: 500px;
+    height: 155px;
+    background: #C9EDE9;
+    border-radius: 21px 21px 21px 21px;
+    font-size: larger;
+    text-align: center;
+    text-align: right;
+    transition: all;
+    transition: 500ms all;
+}
+
+.atd:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.icone_um{
+    position:relative;
+    left:-490px;
+    top:110px;
+}
+
+.icone_dois{
+    position: relative;
+    left: -490px;
+    top: 110px;
+}
+
+.icone_tres{
+    position: relative;
+    left: -490px;
+    top: 110px; 
+}
+
+.icone_quatro{
+    position: relative;
+    left: -490px;
+    top: 110px; 
+}
