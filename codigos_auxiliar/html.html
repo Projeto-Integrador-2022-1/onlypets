@@ -1,21 +1,26 @@
-
-    <label>
-        <input name="atendimento" type="radio"> Atd1
-    </label>
-
-    <label>
-        <input name="atendimento" type="radio"> Atd2
-    </label>
-
-    <label>
-        <input name="atendimento" type="radio"> Atd3
-    </label>
-
-    <label>
-        <input name="atendimento" type="checkbox"> Atd4
-    </label>
-
-    <label>
-        <input name="atendimento" type="checkbox"> Atd5
-    </label>
-   
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Como deixar um radio selecionado</title>
+</head>
+<body>
+<form>
+    <p>Seleciona sua marca favorita:</p>
+    <div>
+        <input type="radio" id="adidas" name="brand" value="adidas">
+        <label for="adidas">Adidas</label>
+    </div>
+    <div>
+        <input type="radio" id="nike" name="brand" value="nike" checked>
+        <label for="nike">Nike</label>
+    </div>    
+    <div>
+        <input type="radio" id="puma" name="brand" value="puma">
+        <label for="puma">Puma</label>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
+</form>
+</body>
+</html>
