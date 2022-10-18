@@ -1,0 +1,29 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container__main--topo{
+min-width: 100vw;
+height: 187px;
+justify-content: space-between;
+display: flex;
+align-items: center;
+
+background: #DBEEF2;
+}
+
+.container__main--topo--logo{
+position: relative;
+left: -100px;
+top: 10px;
+
+}
+
+

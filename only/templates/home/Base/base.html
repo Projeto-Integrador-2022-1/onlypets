@@ -1,0 +1,41 @@
+{% block head %}
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+{% load static %}
+<head> 
+<TITLE>HOME</TITLE>
+<link rel="stylesheet" href="{% static 'home/Basest/basest.css' %}">
+{% block style %}{% endblock %}
+</head>
+{% endblock %}
+<style>
+#container__main--topo--user_name{
+position:relative;
+width: 155px;
+height: 28px;
+left: 80vw;
+top: -5vh;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "container__main--topo--logo" src="{% static 'home/Homest/logocolorida.svg' %}" alt="logo" width="200" height="200">
+                <h3 id="container__main--topo--user_name">Ola, {nome de usuario}!</h3>
+
+            </div>
+            {% block body %}{% endblock %}
+        </div>
+        </div>    
+</body>
