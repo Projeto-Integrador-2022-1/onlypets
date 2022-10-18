@@ -9,13 +9,14 @@
 </head>
 
 <body>
+    {% url 'home' as home %}
     <div class="container">
         <div class="container__main">
             <div class="container__main--topo">
                 <img class= "container__main--topo--logo" src="{% static 'home/Clinicast/logocolorida.svg' %}" alt="logo" width="200" height="200">
             </div>
             <div class="container__main--login--button">
-                <a href="/home"><button  id="voltar"><img src="{% static 'home/Clinicast/seta_voltar.svg' %}"></button></a>
+                <a href= {{ home }} ><button  id="voltar"><img src="{% static 'home/Clinicast/seta_voltar.svg' %}"></button></a>
             </div>
             <div class="selecao">
                 <div class="clinica_um">
