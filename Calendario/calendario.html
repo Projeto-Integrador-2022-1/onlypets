@@ -10,14 +10,21 @@
     <div class="container">
         <div class="container_topo">
             <img src="./logocolorida.svg" alt="logo" width="200" height="200"/>
-            <h1>Usuario</h1>
+            <div class="topo_user">
+                <img src="./logouser.svg" alt="Foto Usuario" width="80" height="80" />
+            </div>
 
         </div>
 
         <div class="container_main">
-            <h3>Data:
-                <input type="datetime-local" name="agendamento" class="main_data">
-            </h3>
+            <div class="main_data">
+                <h1>Data</h1>
+                <input type="date" name="agendamento-data" >
+            </div>
+            <div class="main_time">
+                <h1>Hora</h1>
+                <input type="time" name="agendamento-hora">
+            </div>
             <a href="../pagamento/tel_pagamen.html"><button class="main_button">AGENDAR</button></a>
         </div>
 
