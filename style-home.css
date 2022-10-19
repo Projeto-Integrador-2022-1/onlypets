@@ -68,15 +68,15 @@ position: relative;
 }
 
 .titulo{
-font-size: 50px;
+font-size:50px;
 position: relative;
-/* bottom:-25vh; */
+bottom:-25vh;
 }
 
 .imagem1{
 width: fit-content;
 position: relative;
-/* top:31vh;    */
+top:31vh;   
 }
 
 .buscar{
