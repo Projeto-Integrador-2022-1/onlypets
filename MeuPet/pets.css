@@ -39,3 +39,76 @@ background: #DBEEF2;
     color: #3B6E61;
     cursor: pointer;;
 }
+
+.cadastro_pet{
+    position:relative;
+    top: 5vh;
+    left:0vh;
+    width: 400px;
+    height: 500px;
+    font-size: 20px;
+    border-radius: 20px;
+    background:#88BEB8;
+    border: 1px solid #D9A330;
+    transition: all;
+    transition: 500ms all;
+}
+
+.logo_cadastro{
+    position: relative;
+    top:0vh;
+}
+.cadastro_pet:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.pet_um{
+    position: relative;
+    top:-10vh;
+    left:-40vh;
+    width: 200px;
+    height: 200px;
+}
+.pet_um_input{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+.pet_um_input input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+.pet_um_butao{
+    position: relative;
+    left: 40vh;
+    top:20vh;
+    width: 400px;
+    height: 500px;
+    background: #C9EDE9;
+    border-radius: 21px 21px 21px 21px;
+    font-size: larger;
+    text-align: center;
+    text-align: right;
+    transition: all;
+    transition: 500ms all;
+}
+.pet_um_butao:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+.pet_dois_input{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_dois{
+    position: relative;
+    top:10vh;
+    left:-40vh;
+    width: 200px;
+    height: 200px; 
+}
