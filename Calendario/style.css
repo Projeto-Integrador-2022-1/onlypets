@@ -6,18 +6,22 @@
 .container{
     /* align-items: center; */
     /* justify-content: center; */
-    border: red 1px solid;
     height: 100vh;
     width: 100vw;
     flex-direction: column;
 }
 .container_topo{
     justify-content: space-around;
+    align-items: center;
     display: flex;
     background: #DBEEF2;
     width: 100vw;
-    border: solid blue 1px;
     gap: 70vw;
+}
+.topo_user{
+    background: #AAA3A3;
+    border-radius: 50%;
+    padding: 10px;
 }
 .container_main{
     flex-direction: column;
@@ -29,7 +33,22 @@
     gap: 10vh;
 }
 .main_data{
-    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 10vh;
+    background: #F3F2F5;
+}
+.main_time{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 10vh;
+    background: #F3F2F5;
 }
 .main_button{
     background: #3B6E61;
