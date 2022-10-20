@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from clinicas import models
+import clinicas
 
 # Create your views here.
 def Splash(request):
@@ -15,6 +17,13 @@ def Cadastro(request):
     return render(request,"home/Login_Cad/cadastro.html")
 
 def Clinica(request):
-    return render(request,"home/Clinica/clinicas.html")
+    clins=models.Clinica.objects.all()
+    contexto={
+        "clinicas": clins,
+    }
+    return render(request,"home/Clinica/clinicas.html",context=contexto)
+
+def Vet(request):
+    return render(request,"home/Vet/vets.html")
 
 

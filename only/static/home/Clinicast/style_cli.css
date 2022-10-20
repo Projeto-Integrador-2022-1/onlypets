@@ -3,29 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container__main--topo{
-width: 100vw;
-height: 187px;
-left: -1px;
-top: -5px;
-display: flex;
-align-items: center;
-
-background: #DBEEF2;
-}
-.container{
-    width: 100vw;
-    height: 100vh;
-
-}
-.container__main{
-    
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
 #voltar{
     position: absolute;
     left:0px;
@@ -41,7 +18,11 @@ background: #DBEEF2;
     cursor: pointer;;
 }
 
-
+.clinica_um{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 .clinica_um_button{
     position: relative;
     top:10vh;

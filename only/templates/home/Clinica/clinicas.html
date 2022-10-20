@@ -7,17 +7,20 @@
 {% load static %}
 <head> 
 <TITLE>CLÍNICAS</TITLE>
-{% block style %}<link rel="stylesheet" href="{% static 'home/Clinicast/style_cli.css' %}">{% endblock %}
+<link rel="stylesheet" href="{% static 'home/Clinicast/style_cli.css' %}">
 </head>
 {% endblock %}
 {% block body %}
     {% url 'home' as home %}
+    {% url 'vet' as vet %}
             <div class="container__main--login--button">
                 <a href= {{ home }} ><button  id="voltar"><img src="{% static 'home/Clinicast/seta_voltar.svg' %}"></button></a>
             </div>
             <div class="selecao">
+                {% for c in clinicas %}
                 <div class="clinica_um">
-                    <a href="../TelaVeterinários/slc_vet.html"> <button class="clinica_um_button"><img class="clinica_um_imagem" src="{% static 'home/Clinicast/logopetshop.svg' %}" alt="logo" width="81" height="81"><h1 class="animalzao">Animalzão : Pet Shop e Clínica </h1></button></a>
+                    <a href={{ vet }}> <button class="clinica_um_button"><img class="clinica_um_imagem" src="{% static 'home/Clinicast/logopetshop.svg' %}" alt="logo" width="81" height="81"><h1 class="animalzao">{{c.nome}}</h1></button></a>
                 </div>
+                {% endfor %}
             </div>
 {% endblock %}
