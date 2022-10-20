@@ -1,42 +1,49 @@
-*{
-    margin:  0;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container__main{
+
+.container__main {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.container_topo{
+
+.container_topo {
     width: 100vw;
     height: 187px;
-    /* left: -1px; */
-    /* top: -5px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #DBEEF2;
 }
-.container_topo h3:last-of-type{
+
+.container_topo h3:last-of-type {
     margin-left: auto;
     margin-right: 5px;
 }
-#user_name{
-width: 155px;
-height: 28px;
-font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 28px;
-display: flex;
-align-items: center;
-color: #000000;
+
+#user_name {
+    width: 155px;
+    height: 28px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 420;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.logo{
+.logo {
     margin-left: 8vh;
 }
 
@@ -57,7 +64,7 @@ color: #000000;
     border-radius: 50%;
 }
 
-.Title_pag{
+.Title_pag {
     height: 75px;
     font-size: x-large;
     display: flex;
@@ -65,43 +72,101 @@ color: #000000;
     justify-content: center;
     font-family: 'Josefin Sans';
     font-style: normal;
-    margin-block: 3em;
+    margin-block: 2.5em;
     -webkit-text-stroke: 1px #D9A330;
     color: #00000000;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.container__main--bloco{
-/* position: relative; */
+.container__main--bloco {
+    /* position: relative; */
     min-width: 54vw;
-    width: 450px;;
-    height: 350px;
+    width: 333px;
+    height: 250px;
     background: #7DBFCF;
     border: 3px solid #D9A330;
     border-radius: 0px 90px;
     justify-content: space-between;
+    align-content: center;
     align-items: center;
     display: flex;
+    padding-bottom: 1rem;
 }
 
-#texto{
+#texto {
+    align-items: center;
+    align-content: center;
+    width: auto;
+    margin-inline: 12px;
+    margin-top: 39px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Imagens {
+
+    padding-top: 10vmax;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: -webkit-flex;
+    color: rgb(73, 177, 142);
+}
+
+.blocos {
     align-items: center;
     width: auto;
-   margin-inline: 11px;
-   margin-top: 39px;
-   margin-bottom: 15px;
-}
-
-.Img1{
-    padding-top: 5em;
-}
-
-#texto2{
-    position: relative;
-    top:-13vh;
-    left:20vh;
-    margin-inline: 11px;
-    margin-bottom: 15px;
+    margin-block: 5em;
+    /* background-color: rgb(79, 179, 179); */
+    font-size: medium;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    text-align: center;
     display: flex;
-   
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+#button1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 100%;
+    border: 2px solid #D9A330;
+    margin-inline: 12px;
+    width: 20rem; 
+    height: 35px;   
+    
+}
+
+#button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-block: 18px;
+    font-size: 100%;
+    border-radius: 15px;
+    border: 2px solid #D9A330;
+    width: 20rem; 
+    height: 35px;
+
+}
+
+#button3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 100%;
+    border-radius: 15px;
+    border: 2px solid #D9A330;
+    width: 20rem; 
+    height: 35px;
+
+}
