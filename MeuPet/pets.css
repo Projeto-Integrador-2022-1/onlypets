@@ -41,14 +41,14 @@ background: #DBEEF2;
 }
 
 .cadastro_pet{
-    position:relative;
-    top: 5vh;
-    left:0vh;
+    position: relative;
+    left: -100vh;
+    top:10vh;
     width: 400px;
     height: 500px;
     font-size: 20px;
     border-radius: 20px;
-    background:#88BEB8;
+    background: #88BEB8;
     border: 1px solid #D9A330;
     transition: all;
     transition: 500ms all;
@@ -64,25 +64,42 @@ background: #DBEEF2;
     cursor: pointer;;
 }
 .pet_um{
-    position: relative;
-    top:-10vh;
-    left:-40vh;
-    width: 200px;
-    height: 200px;
-}
-.pet_um_input{
     height: 100%;
     width: 100%;
     appearance: none;
 }
-.pet_um_input input:checked{
+.pet_um_div input:checked {
     background-color: #D9A330;
     border-radius:21px ;
 }
-.pet_um_butao{
+.pet_dois_div input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+
+
+.pet_dois{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_tres{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_quatro{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_butao_um{
     position: relative;
-    left: 40vh;
-    top:20vh;
+    left: -10vh;
+    top:10vh;
     width: 400px;
     height: 500px;
     background: #C9EDE9;
@@ -92,23 +109,55 @@ background: #DBEEF2;
     text-align: right;
     transition: all;
     transition: 500ms all;
+    border: 1px solid #D9A330;
 }
-.pet_um_butao:hover{
+.pet_butao_um:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.pet_butao_dois{
+    position: relative;
+    left: 80vh;
+    top:10vh;
+    width: 400px;
+    height: 500px;
+    background: #C9EDE9;
+    border-radius: 21px 21px 21px 21px;
+    font-size: larger;
+    text-align: center;
+    text-align: right;
+    transition: all;
+    transition: 500ms all;
+    border: 1px solid #D9A330;
+}
+.pet_butao_dois:hover{
     background: #D9A330;
     color: #3B6E61;
     cursor: pointer;;
 }
 
-.pet_dois_input{
-    height: 100%;
-    width: 100%;
-    appearance: none;
+.pets_butao:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
 }
-
-.pet_dois{
+.pets{
+    display: flex;
+    flex-direction:row-reverse;
+}
+.prosseguir{
     position: relative;
-    top:10vh;
-    left:-40vh;
-    width: 200px;
-    height: 200px; 
+    top:20vh;
+    width: 450px;
+    height: 125px;
+    border-radius: 24px;
+    border: 1px solid #D9A330;
+    background: #3B6E61;
+    font-size: 50px;
+}
+.prosseguir:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
 }

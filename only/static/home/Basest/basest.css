@@ -3,27 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container__main{
+.container__main--topo{
+    width: 100vw;
+    height: 187px;
+    left: -1px;
+    top: -5px;
+    display: flex;
     align-items: center;
+    
+    background: #DBEEF2;
+ }
+.container{
+        width: 100vw;
+        height: 100vh;
+    
+}
+.container__main{
+        
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-}
-.container__main--topo{
-min-width: 100vw;
-height: 187px;
-justify-content: space-between;
-display: flex;
-align-items: center;
-
-background: #DBEEF2;
-}
-
-.container__main--topo--logo{
-position: relative;
-left: -100px;
-top: 10px;
-
 }
 
 

@@ -68,10 +68,7 @@ background: #DBEEF2;
     background-color: #D9A330;
     border-radius:21px ;
 }
-.atd_cinco input:checked{
-    background-color: #D9A330;
-    border-radius:21px ;
-}
+
 
 .at_dois{
     height: 100%;
@@ -91,11 +88,6 @@ background: #DBEEF2;
     appearance: none;
 }
 
-.at_cinco{
-    height: 100%;
-    width: 100%;
-    appearance: none;
-}
 
 .atd{
     position: relative;
