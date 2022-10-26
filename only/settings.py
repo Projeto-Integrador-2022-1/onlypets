@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "only",
     "polls",
     "clinicas",
+    "cadastro",
 ]
 
 MIDDLEWARE = [
