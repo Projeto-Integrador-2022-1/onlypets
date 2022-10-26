@@ -53,7 +53,22 @@ background: #DBEEF2;
     transition: all;
     transition: 500ms all;
 }
-
+.topo{
+    position:relative;
+    width: 700px;
+    height: 200px;
+    background-color:#88BEB8;
+    border-radius: 20px;
+    font-size: 50px;
+    left: -2vh;
+    top: 2vh;
+    text-align: center;
+}
+.titulo{
+    position: relative;
+    top:3vh;
+    font-size: 60px;
+}
 .logo_cadastro{
     position: relative;
     top:0vh;
@@ -63,7 +78,7 @@ background: #DBEEF2;
     color: #3B6E61;
     cursor: pointer;;
 }
-.pet_um{
+.pet_um {
     height: 100%;
     width: 100%;
     appearance: none;
@@ -143,6 +158,8 @@ background: #DBEEF2;
     cursor: pointer;;
 }
 .pets{
+    position: relative;
+    left: 10vh;
     display: flex;
     flex-direction:row-reverse;
 }
