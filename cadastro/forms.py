@@ -1,11 +1,20 @@
-from cProfile import label
-import email
 from django import forms
+from django.contrib.auth.models import User
+
+from cadastro.models import Cadastro_Pessoa
 
 class Cadastro_Form(forms.ModelForm):
-    name = forms.CharField(label="Nome",widget=forms.TextInput())
-    sobrenome = forms.CharField(label="Sobrenome",widget=forms.TextInput())
-    email = forms.EmailField(label="Email",widget=forms.EmailInput())
-    telefone = forms.CharField(label="Telefone",widget=forms.CharField())
-    senha = forms.PasswordInput(label="Senha",widget=forms.PasswordInput())
-    confirmar_senha = forms.CharFields(label="Senha",widget=forms.PasswordInput())
+    telefone = forms.CharField(max_length=11,widget=forms.TextInput(attrs={'placeholder':'Telefone'}))
+    class Meta:
+        model = User
+        fields  = ['username','first_name','last_name','email','password']
+        widgets = {
+            'username' : forms.TextInput(attrs={'placeholder':'Nome do usuário'}),
+            'first_name' : forms.TextInput(attrs={'placeholder':'Nome'}),
+            'last_name' : forms.TextInput(attrs={'placeholder':'Sobrenome'}),
+            'email' : forms.EmailInput(attrs={'placeholder':'Email'}),
+            #'Telefone' : forms.TextInput(attrs={'placeholder':'Telefone'}),
+            'password': forms.PasswordInput(attrs={'placeholder':'Senha'}),
+            #'Confirmar_Senha': forms.PasswordInput(attrs={'placeholder':'Confirmar Senha'})
+        }
+   

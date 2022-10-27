@@ -24,9 +24,12 @@
             <div class="container__main--login--title">
                 CADASTRO
             </div>
-            <form action="." method="post">
+            <form action="." method="post" class="Forms">
                 {% csrf_token %}
-                {{ form.as_ul }}
+                {% for field in form %}
+                    {{field}}
+                {% endfor %}
+                <button type="submit" id="container__main--login--cadastro">CADASTRAR</button>
             </form>
      <!--        <input type="text" name="nome" id="usuario" placeholder="Nome">
             <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
@@ -34,7 +37,6 @@
             <input type="tel" name="telefone" placeholder="Telefone">
             <input type="password" name="senha" placeholder="Senha">
             <input type="password" name="conf_senha" placeholder="Confirmar senha"> -->
-            <button id="container__main--login--cadastro">CADASTRAR</button>
         </div>
         
         <div class="container__main--animals">

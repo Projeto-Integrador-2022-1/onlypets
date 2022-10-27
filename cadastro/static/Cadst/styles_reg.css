@@ -62,7 +62,13 @@
     color: #3B6E61;
     font-family: 'Josefin Sans';
 }
-
+.Forms{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 input {
     width: 300px;
