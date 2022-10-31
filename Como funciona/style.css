@@ -98,8 +98,9 @@
     align-content: center;
     width: auto;
     margin-inline: 12px;
-    margin-top: 39px;
-    margin-bottom: 15px;
+    margin-block: 20px;
+    /* margin-top: 39px; */
+    /* margin-bottom: 15px; */
     text-align: center;
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
@@ -149,7 +150,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin-block: 18px;
+    margin-block: 20px;
     font-size: 100%;
     border-radius: 15px;
     border: 2px solid #D9A330;
