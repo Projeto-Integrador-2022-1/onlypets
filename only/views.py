@@ -1,7 +1,5 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from clinicas import models
-import clinicas
 
 # Create your views here.
 def Splash(request):

@@ -12,11 +12,12 @@
 </head>
 <body>
 <div class="container">
+    {% url 'login' as login %}
 
     <div class="container__main">
         <div class="container__main--login">
             <div class="container__main--login--button">
-                <a href="./Login.html"><button  id="container__main--login--voltar"><img src="{% static 'Cadst/seta_voltar.svg' %}"></button></a>
+                <a href={{ login }}><button  id="container__main--login--voltar"><img src="{% static 'Cadst/seta_voltar.svg' %}"></button></a>
             </div>
             <div>
                 <img class= "container__main--login--logo" src="{% static 'Cadst/logo.svg' %}" alt="logo" width="100" height="100">

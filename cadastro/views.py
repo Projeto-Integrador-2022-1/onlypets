@@ -6,7 +6,7 @@ from cadastro.models import Cadastro_Pessoa
 
 # Create your views here.
 
-def Home(request):
+def HomeCad(request):
     formulario = Cadastro_Form()
     contexto={
         'form' : formulario,

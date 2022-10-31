@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "polls",
     "clinicas",
     "cadastro",
+    "login",
 ]
 
 MIDDLEWARE = [
