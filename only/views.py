@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from clinicas import models
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 def Splash(request):
     return render(request,"home/Splash/Splash.html")
 
+@login_required(login_url='login/')
 def Homep(request):
     return render(request,"home/Home/home.html")
 

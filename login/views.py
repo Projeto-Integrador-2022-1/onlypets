@@ -1,7 +1,8 @@
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
-from django.urls import is_valid_path
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
+from django.contrib.auth import authenticate, login, logout
 from login.forms import Logando
+from only.views import Homep
 
 # Create your views here.
 
@@ -12,7 +13,7 @@ def HomeLogin(request):
     }
     if request.method == 'POST':
         print("Frase qualquer")
-        formulario= Logando(request.POST)
+        formulario=Logando(request.POST)
         if formulario.is_valid():
             print("Outra frase")
             usernames = formulario.cleaned_data['username']
@@ -21,6 +22,11 @@ def HomeLogin(request):
             print(user)
             if user is not None:
                 login(request,user)
+                return redirect(Homep)
             else:
-                formulario.add_error("Algo de errado não está certo")
+                return HttpResponse("Algo de errado não está certo")
     return render(request,"login/Login.html",context=contexto)
+
+def Logout(request):
+    logout(request)
+    return redirect(HomeLogin)

@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from only.views import Splash,Homep,Login,Cadastro,Clinica,Vet
+from only.views import Homep,Clinica,Vet
 from django.conf import settings
 from django.conf.urls.static import static
+
 
 urlpatterns = [
     #path('', Splash, name='splash'),
