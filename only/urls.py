@@ -15,15 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from only.views import Splash,Homep,Login,Cadastro,Clinica
+from only.views import Splash,Homep,Login,Cadastro,Clinica,Vet
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', Splash, name='splash'),
-    path("home/", Homep,name='home'),
-    path("login/", Login,name='login'),
-    path("cadastro/",Cadastro,name='cadastro'),
+    #path('', Splash, name='splash'),
+    path('', Homep,name='home'),
+    path("login/", include("login.urls")),
+    path("cadastro/",include("cadastro.urls")),
     path("clinica/",Clinica,name='clinica'),
     path("admin/", admin.site.urls),
+    path("vet/",Vet,name='vet'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,3 +1,5 @@
+{% extends 'home/Base/base.html' %}
+{% block head %}
 <!DOCTYPE html>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
 "http://www.w3.org/TR/REC-html40/strict.dtd">
@@ -7,15 +9,8 @@
 <TITLE>HOME</TITLE>
 <link rel="stylesheet" href="{% static 'home/Homest/style-home.css' %}">
 </head>
-
-<body>
-    <div class="container">
-        <div class="container__main">
-            <div class="container__main--topo">
-                <h3 id="container__main--topo--user_name">Ola, {nome de usuario}!</h3>
-                <img class= "container__main--topo--logo" src="{% static 'home/Homest/logocolorida.svg' %}" alt="logo" width="200" height="200">
-
-            </div>
+{% endblock %}
+{% block body %}
             <div class="container__main--bloco"> 
                 <div class="texto">
                     <h1 tag="frase_um"><i>Bem-vindo(a)<br>ao OnlyPets</i></h1>
@@ -37,8 +32,4 @@
                     <img class="imagem1clinica" src="{% static 'home/Homest/clinica.svg' %}" alt="clinica" width="200" height="200">
                     <a href="/clinica"><button class="buscar">BUSCAR CLÍNICAS</button></a>
                 </div>
-            </div> 
-        </div>
-        </div>    
-    </div>
-</body>
+{% endblock %}

@@ -1,0 +1,180 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__main--topo{
+width: 100vw;
+height: 187px;
+left: -1px;
+top: -5px;
+display: flex;
+align-items: center;
+
+background: #DBEEF2;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container__main{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#voltar{
+    position: absolute;
+    left:0px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 80px;
+    width: 80px;
+}
+
+#voltar:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+.cadastro_pet{
+    position: relative;
+    left: -100vh;
+    top:10vh;
+    width: 400px;
+    height: 500px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: #88BEB8;
+    border: 1px solid #D9A330;
+    transition: all;
+    transition: 500ms all;
+}
+.topo{
+    position:relative;
+    width: 700px;
+    height: 200px;
+    background-color:#88BEB8;
+    border-radius: 20px;
+    font-size: 50px;
+    left: -2vh;
+    top: 2vh;
+    text-align: center;
+}
+.titulo{
+    position: relative;
+    top:3vh;
+    font-size: 60px;
+}
+.logo_cadastro{
+    position: relative;
+    top:0vh;
+}
+.cadastro_pet:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.pet_um {
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+.pet_um_div input:checked {
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+.pet_dois_div input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+
+
+.pet_dois{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_tres{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_quatro{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+
+.pet_butao_um{
+    position: relative;
+    left: -10vh;
+    top:10vh;
+    width: 400px;
+    height: 500px;
+    background: #C9EDE9;
+    border-radius: 21px 21px 21px 21px;
+    font-size: larger;
+    text-align: center;
+    text-align: right;
+    transition: all;
+    transition: 500ms all;
+    border: 1px solid #D9A330;
+}
+.pet_butao_um:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.pet_butao_dois{
+    position: relative;
+    left: 80vh;
+    top:10vh;
+    width: 400px;
+    height: 500px;
+    background: #C9EDE9;
+    border-radius: 21px 21px 21px 21px;
+    font-size: larger;
+    text-align: center;
+    text-align: right;
+    transition: all;
+    transition: 500ms all;
+    border: 1px solid #D9A330;
+}
+.pet_butao_dois:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+.pets_butao:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+.pets{
+    position: relative;
+    left: 10vh;
+    display: flex;
+    flex-direction:row-reverse;
+}
+.prosseguir{
+    position: relative;
+    top:20vh;
+    width: 450px;
+    height: 125px;
+    border-radius: 24px;
+    border: 1px solid #D9A330;
+    background: #3B6E61;
+    font-size: 50px;
+}
+.prosseguir:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}

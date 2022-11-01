@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+    {% load static %}
+<head> 
+<TITLE>CADASTRO</TITLE>
+
+<link rel="stylesheet" href="{% static 'Cadst/styles_reg.css' %}">
+
+
+</head>
+<body>
+<div class="container">
+    {% url 'login' as login %}
+
+    <div class="container__main">
+        <div class="container__main--login">
+            <div class="container__main--login--button">
+                <a href={{ login }}><button  id="container__main--login--voltar"><img src="{% static 'Cadst/seta_voltar.svg' %}"></button></a>
+            </div>
+            <div>
+                <img class= "container__main--login--logo" src="{% static 'Cadst/logo.svg' %}" alt="logo" width="100" height="100">
+            </div>
+            <div class="container__main--login--title">
+                CADASTRO
+            </div>
+            <form action="." method="post" class="Forms">
+                {% csrf_token %}
+                {% for field in form %}
+                    {{field}}
+                {% endfor %}
+                <button type="submit" id="container__main--login--cadastro">CADASTRAR</button>
+            </form>
+     <!--        <input type="text" name="nome" id="usuario" placeholder="Nome">
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="tel" name="telefone" placeholder="Telefone">
+            <input type="password" name="senha" placeholder="Senha">
+            <input type="password" name="conf_senha" placeholder="Confirmar senha"> -->
+        </div>
+        
+        <div class="container__main--animals">
+            <div>
+                <div class="container__main--animals--patas-bottom">
+                    <img src="{% static 'Cadst/patas.svg' %}" alt="img1" >
+                </div>
+            </div>
+            <div class="container__main--animals--pet-bottom">
+                <img src="{% static 'Cadst/img2.svg.svg' %}" alt="img2" >
+            </div>
+        </div>
+    </div>
+   
+
+</div>
+
+</body>
+</html>

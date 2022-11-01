@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head> 
+<meta charset="UTF-8">
+<TITLE>VETERINÁRIOS</TITLE>
+<link rel="stylesheet" href="{% static 'home/Vetst/style_vet.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% url 'clinica' as clinica %}
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "container__main--topo--logo" src="{% static 'home/Vetst/logocolorida.svg' %}" alt="logo" width="200" height="200">
+            </div>
+            <div class="container__main--login--button">
+                <a href={{ clinica }}><button  id="voltar"><img src="{% static 'home/Vetst/seta_voltar.svg' %}"></button></a>
+            </div>
+            <div class="placa">
+                <img class= "placa_imagem" src="{% static 'home/Vetst/cachorro.svg' %}" alt="logo" width="">
+                <h1 class="placa_texto">VETERINÁRIOS</h1>
+            </div>
+            <div class="veterinarios">
+                <div class="veterinario_um">
+                    <a href="{% static 'home/Vetst/veterinarios/joana.html' %}"><button class="vet_um_button"><img class="vet_um_imagem" src="{% static 'home/Vetst/vetum.svg' %}" alt="logo" width="150" height="150"><h1 class="nome">Joana Lima</h1><h2 class ="bio">Especialista em Serviços Gerais</h2></button></a>
+                    <!-- img class="estrela" src="./estrela.svg" alt="" width="50" height="50"-->
+            </div>
+
+         
+        </div>
+    </div>
+</body>
