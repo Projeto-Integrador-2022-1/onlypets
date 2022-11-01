@@ -18,9 +18,7 @@ from django.urls import path
 from cadastro.views import HomeCad
 from django.conf import settings
 from django.conf.urls.static import static
-from login.views import HomeLogin
 
 urlpatterns = [
-    path('', HomeCad,name='home'),
-    path('login/', HomeLogin,name='login'),
+    path('', HomeCad,name='cadastro'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

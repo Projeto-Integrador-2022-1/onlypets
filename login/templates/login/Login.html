@@ -12,7 +12,6 @@
 </head>
 <body>
 <div class="container">
-    {% url 'cadastro' as cadastro %}
 
     <div class="container__main">
         <div class="container__main--login">
@@ -24,7 +23,7 @@
             </div>
             <input type="text" name="usuario" id="usuario" placeholder="Usuario">
             <input type="password" name="senha" id="senha" placeholder="Senha">
-            <a href={{ cadastro }}>Cadastre-se aqui</a>
+            <a href="{% url 'cadastro' %}">Cadastre-se aqui</a>
             <button>ACESSAR</button>
         </div>
         
