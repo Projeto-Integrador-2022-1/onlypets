@@ -17,4 +17,7 @@ class Cadastro_Form(forms.ModelForm):
             'password': forms.PasswordInput(attrs={'placeholder':'Senha'}),
             #'Confirmar_Senha': forms.PasswordInput(attrs={'placeholder':'Confirmar Senha'})
         }
-   
+
+class Login_Form(forms.Form):
+    email = forms.CharField(widget=forms.EmailInput(attrs={'placeholder':'Email'}))
+    senha = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder':'Senha'}))
