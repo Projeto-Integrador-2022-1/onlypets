@@ -34,8 +34,6 @@
     top: 80px;
 }
 
-
-
 .container__main--login {
     display: flex;
     flex-direction: column;
@@ -47,6 +45,13 @@
     backdrop-filter: blur(2px);
     border-radius: 10px;
     padding-bottom: 40px;
+}
+.forms{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .container__main--login--title{
