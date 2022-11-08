@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Chau Philomene One' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,41 +22,42 @@
                 <div class="content">
                     <h2>Bem vindo(a) a OnlyPets!</h2>
                     <p>O site especializado no atendimento do seu pet!</p>
-                    <img src="images/cat-dog.svg" alt="Gato & Cachorro">
+                    <img id="cat-dog-img" src="images/cat-dog.svg" alt="Gato & Cachorro">
+                    <img id="dog" src="images/doguinho-transparent.png" alt="Doguinho">
                     <!-- <img src="images/foto-doguinho.svg" alt="Doguinho"> -->
                 </div>
             </div>
-            <div class="container__main--bottom">
-                <div class="titulo">
-                    <h1>SERVIÇOS</h1>
-                </div>
-                <div class="services-search">
-                    <div class="clinics">
-                        <img class="imagem1clinica" src="images/clinica.svg" alt="clinica">
-                        <!-- <a href="./TelaVet/vet.html"> -->
-                        <button class="buscar">BUSCAR CLÍNICAS</button>
-                        <!-- <div id="comprar">
+            <div class="services">
+                <div class="services-content">
+                    <div class="services-search">
+                        <div class="titulo">
+                            <h1>SERVIÇOS</h1>
+                        </div>
+                        <div class="clinics">
+                            <img class="imagem1clinica" src="images/clinica.svg" alt="clinica">
+                            <!-- <a href="./TelaVet/vet.html"> -->
+                            <button class="buscar">BUSCAR CLÍNICAS</button>
+                            <!-- <div id="comprar">
                             <h2>Claro</h2>
                         </div> -->
-                        <!-- </a> -->
+                            <!-- </a> -->
+                        </div>
+                        <div class="petshop">
+                            <img class="imagem2clinica" src="images/petshop.svg" alt="petshop">
+                            <!-- <a href="./TelaVet/vet.html"> -->
+                            <button class="buscar">BUSCAR PETSHOP</button>
+                            <!-- </a> -->
+                        </div>
                     </div>
-                    <div class="petshop">
-                        <img class="imagem2clinica" src="images/petshop.svg" alt="petshop">
-                        <!-- <a href="./TelaVet/vet.html"> -->
-                        <button class="buscar">BUSCAR PETSHOP</button>
-                        <!-- </a> -->
-                    </div>
+
+                    <img id="services-img" src="images/services.svg" alt="Serviços">
                 </div>
-
             </div>
-
-
-
         </div>
+        <input type="checkbox" name="" id="">
+        <button aria-checked="toLight()" onclick="toDark()" id="claro" class="light-mode">Dark Mode</button>
     </div>
-    </div>
-    <input type="checkbox" name="" id="">
-    <button aria-checked="toLight()" onclick="toDark()" id="claro" class="light-mode">Dark Mode</button>
+
     <script src="script.js">
     </script>
 </body>
