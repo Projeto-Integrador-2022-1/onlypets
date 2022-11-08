@@ -42,6 +42,8 @@
 
 .logo {
     margin-left: 8vh;
+    width: 18vw;
+    height: 18vh;
 }
 
 .foto_user {
@@ -49,8 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-right: 25px;
     background: rgba(170, 163, 163, 0.65);
@@ -72,9 +74,35 @@
     font-size: 100%;
     border-radius: 15px;
     border: 2px solid #D9A330;
-    /* width: 20rem; 
-    height: 35px; */
     height: 55px;
     left: 22px;
     top: 178px;
+}
+
+.sub_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.bloco_video{
+    background: rgba(170, 163, 163, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    height: 35vh;
+    margin-bottom: 20px;
+}
+
+.tutorial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 20px;
+    font-size: 15px;
+
 }
