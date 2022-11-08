@@ -31,7 +31,7 @@ color: #000000;
         <div class="container__main">
             <div class="container__main--topo">
                 <img class= "container__main--topo--logo" src="{% static 'home/Homest/logocolorida.svg' %}" alt="logo" width="200" height="200">
-                <h3 id="container__main--topo--user_name">Ola, {nome de usuario}!</h3>
+                <h3 id="container__main--topo--user_name">Ola, {{ user.username }}!</h3>
 
             </div>
             {% block body %}{% endblock %}
