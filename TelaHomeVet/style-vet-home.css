@@ -1,0 +1,21 @@
+*{
+    background-color: F9EDED;
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container__main--topo{
+    width: 100vw;
+    height: 187px;
+    left: -1px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    background: #DBEEF2;
+}
