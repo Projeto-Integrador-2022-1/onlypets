@@ -19,3 +19,20 @@
     align-items: center;
     background: #DBEEF2;
 }
+
+.perfil-foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 10vh;
+    top: 20vh; 
+    background: #3B6E61;
+}
+
+.foto{
+    position: relative;
+    top: 20vh;
+    left: 10vh;
+    border-radius: 360px;
+    border: 2px solid #D9A330;
+}
