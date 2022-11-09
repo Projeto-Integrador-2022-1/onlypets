@@ -65,3 +65,24 @@ body {
     /* font-weight: bold; */
     font-size: 75px;
 }
+
+.petshop {
+    background-color: aliceblue;
+}
+
+.counter-one {
+    counter-reset: section;
+}
+
+.counter-one li {
+    list-style-type: none;
+    counter-increment: num;
+}
+
+.counter-one li::before {
+    content: " " counter(num) " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
