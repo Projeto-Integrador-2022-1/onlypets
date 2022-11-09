@@ -1,0 +1,8 @@
+from django.urls import path
+from pet.views import PetCad
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('', PetCad,name='login'),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

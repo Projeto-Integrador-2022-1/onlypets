@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-
+    {% load static %}
 <head>
     <meta charset="UTF-8"> 
     <TITLE>CADASTRO DO PET</TITLE>
-    <link rel="stylesheet" href="./petcad.css">
+    <link rel="stylesheet" href="{% static 'petst/petcad.css' %}">
 </head>
 
 <body>
@@ -15,11 +15,11 @@
             <div class="container__main--login">
 
                 <div class="container__main--login--button">
-                    <a href="../MeuPet/pets.html"><button  id="container__main--login--voltar"><img src="seta_voltar.svg"></button></a>
+                    <a href="../MeuPet/pets.html"><button  id="container__main--login--voltar"><img src="{% static 'petst/seta_voltar.svg' %}"></button></a>
                 </div>
 
                 <div>
-                    <img class= "container__main--login--logo" src="logo.svg" alt="logo" width="100" height="100">
+                    <img class= "container__main--login--logo" src="{% static 'petst/logo.svg' %}" alt="logo" width="100" height="100">
                 </div>
 
                 <div class="container__main--login--title" div-alling=center>
@@ -45,7 +45,7 @@
                     <option> Pelagem dupla </option>
                 </select>
 
-                <div>Imagem do Pet<br><img src="upload.svg"></div>
+                <div>Imagem do Pet<br><img src="{% static 'petst/upload.svg' %}"></div>
 
                 <button id="container__main--login--cadastro">CADASTRAR</button>
 

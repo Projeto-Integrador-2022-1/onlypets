@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.hashers import make_password
 from cadastro.forms import Cadastro_Form
 from cadastro.models import Cadastro_Pessoa
 from veterinario.forms import Cadastro_Vet_Form
+from login.views import HomeLogin
 
 # Create your views here.
 
@@ -22,6 +23,7 @@ def HomeCad(request):
                 perfil.Telefone = formulario.cleaned_data['telefone']
                 perfil.user = novo
                 perfil.save()
+                return redirect(HomeLogin)
                 
     return render(request,"cadastro/cadastro.html",context=contexto)
 
@@ -43,5 +45,6 @@ def VetCad(request):
             perfil.Clinica = formulario.cleaned_data['clinica']
             perfil.user = novo
             perfil.save()
+            return redirect(HomeLogin)
             
     return render(request,"veterinario/vetcad.html",context=contexto)
