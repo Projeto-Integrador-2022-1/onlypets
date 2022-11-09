@@ -17,7 +17,7 @@
 
 .container_topo {
     width: 100vw;
-    height: 187px;
+    height: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,9 @@
 }
 
 .logo {
-    margin-left: 8vh;
+    margin-left: 4vh;
+    width: 18vw;
+    height: 18vh;
 }
 
 .foto_user {
@@ -52,8 +54,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-right: 25px;
     background: rgba(170, 163, 163, 0.65);
@@ -72,7 +74,7 @@
     justify-content: center;
     font-family: 'Josefin Sans';
     font-style: normal;
-    margin-block: 2.5em;
+    margin-block: 2%;
     -webkit-text-stroke: 1px #D9A330;
     color: #00000000;
     font-family: 'Josefin Sans', sans-serif;
@@ -107,10 +109,9 @@
 }
 
 .Imagens {
-
-    padding-top: 10vmax;
-    width: 4.5rem;
-    height: 4.5rem;
+    padding-top: 4%;
+    width: 5%;
+    height: 5%;
     display: -webkit-flex;
     color: rgb(73, 177, 142);
 }
@@ -118,13 +119,13 @@
 .blocos {
     align-items: center;
     width: auto;
-    margin-block: 5em;
+    margin-block: 3%;
     /* background-color: rgb(79, 179, 179); */
     font-size: medium;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2%;
     text-align: center;
     display: flex;
     flex-direction: column;

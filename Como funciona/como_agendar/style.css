@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@
 
 .container_topo {
     width: 100vw;
-    height: 187px;
+    height: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@
 }
 
 .logo {
-    margin-left: 8vh;
+    margin-left: 4vh;
     width: 18vw;
     height: 18vh;
 }
@@ -88,7 +89,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 20px;
     font-size: 20px;
 }
 
@@ -99,7 +99,7 @@
     justify-content: center;
     width: 35vw;
     height: 35vh;
-    margin-bottom: 20px;
+    margin-block: 2%;
 }
 
 .tutorial{
