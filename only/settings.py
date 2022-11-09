@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     "clinicas",
     "cadastro",
     "login",
+    "pet",
+    "pagamento",
 ]
 
 MIDDLEWARE = [

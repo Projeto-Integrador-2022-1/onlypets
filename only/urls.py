@@ -28,4 +28,5 @@ urlpatterns = [
     path("clinica/",Clinica,name='clinica'),
     path("admin/", admin.site.urls),
     path("vet/",Vet,name='vet'),
+    path("pet/",include("pet.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
