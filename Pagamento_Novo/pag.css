@@ -1,17 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
 *{
     margin:  0;
     padding: 0;
     box-sizing: border-box;
-}
-.container__main--topo{
-width: 100vw;
-height: 187px;
-left: -1px;
-top: -5px;
-display: flex;
-align-items: center;
-
-background: #DBEEF2;
 }
 .container{
     width: 100vw;
@@ -19,7 +14,6 @@ background: #DBEEF2;
 
 }
 .container__main{
-    
     justify-content: center;
     align-items: center;
     display: flex;
@@ -54,13 +48,14 @@ background: #DBEEF2;
     top:5vh;
     left:2.5vh;
     font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .subtitulo{
     position: relative;
     top:5vh;
     font-size: 50px;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 .formas{
     position:relative;
@@ -78,17 +73,18 @@ background: #DBEEF2;
 }
 
 .cartao{
-    position: relative;
     left: 0vh;
     top:10vh;
     width: 600px;
     height: 200px;
     background: #C9EDE9;
     border-radius: 21px 21px 21px 21px;
-    font-size: larger;
-    text-align: center;
-    text-align: right;
-    transition: all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-block: 27px;
+    font-size: 100%;
     transition: 500ms all;
     border: 1px solid #D9A330;
 }
@@ -145,6 +141,6 @@ background: #DBEEF2;
 }
 
 .select{
-    position:relative;
+    display: flex;
     top:25vh;
 }

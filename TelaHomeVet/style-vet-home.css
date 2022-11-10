@@ -42,8 +42,50 @@
 }
 .foto{
     position: relative;
-    top: 20vh;
+    top: 15vh;
     left: 20vh;
     border-radius: 360px;
     border: 2px solid #D9A330;
+}
+
+.cad_servc{
+    position: relative;
+    font-size: 30px;
+    color:#A3D9C9;
+    left: 108vh;
+    top:-30vh;
+    width: 400px;
+    height: 90px;
+    border-radius: 35px;
+    background: #3B6E61;
+    border: 4px solid #D9A330;
+    transition: all;
+    transition: 500ms all;
+}
+.cad_servc:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+
+.ger_servc{
+    position: relative;
+    font-size: 30px;
+    color:#A3D9C9;
+    left: 66.5vh;
+    top:-15vh;
+    width: 400px;
+    height: 90px;
+    border-radius: 35px;
+    background: #3B6E61;
+    border: 4px solid #D9A330;
+    transition: all;
+    transition: 500ms all;
+}
+
+.ger_servc:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
 }
