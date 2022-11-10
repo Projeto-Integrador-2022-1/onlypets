@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+
+.Forms{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .container {
     align-items: center;
     display: flex;
@@ -70,9 +79,6 @@
 
 
 input {
-    /* junta os input */
-    float: left;
-    /* estilos adicionais */
     width: 300px;
     height: 30px;
     border-top-style: hidden;
@@ -81,6 +87,8 @@ input {
     background-color: #EEEEEE;
     font-size: 20px;
 }
+    
+
 
 select{
     width: 300px;

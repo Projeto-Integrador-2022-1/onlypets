@@ -13,48 +13,24 @@
         <div class="container__main">
 
             <div class="container__main--login">
-
                 <div class="container__main--login--button">
-                    <a href="../MeuPet/pets.html"><button  id="container__main--login--voltar"><img src="{% static 'petst/seta_voltar.svg' %}"></button></a>
+                    <a href="{% url 'home' %}"><button  id="container__main--login--voltar"><img src="{% static 'petst/seta_voltar.svg' %}"></button></a>
                 </div>
-
                 <div>
                     <img class= "container__main--login--logo" src="{% static 'petst/logo.svg' %}" alt="logo" width="100" height="100">
                 </div>
-
                 <div class="container__main--login--title" div-alling=center>
                     CADASTRO <br>DO PET
                 </div>
-
-                <input type="text" name="nome" id="usuario" placeholder="Nome">
-                <input type="text" name="peso" id="peso" placeholder="Peso (opcional)">
-                <input type="email" name="nascimento" id="nascimento" placeholder="Nascimento (opcional)">
-                <input type="text" name="especie" id="especie" placeholder="Espécie">
-                <select>
-                    <option selected> Sexo </option>
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                <input type="text" name="raça" placeholder="Raça">
-
-                <select>
-                    <option selected> PELAGEM </option>
-                    <option> Pelo curto liso </option>
-                    <option> Pelo curto e duro </option>
-                    <option> Pelo longo liso </option>
-                    <option> Pelo longo ondulado </option>
-                    <option> Pelagem dupla </option>
-                </select>
-
-                <div>Imagem do Pet<br><img src="{% static 'petst/upload.svg' %}"></div>
-
-                <button id="container__main--login--cadastro">CADASTRAR</button>
-
+                    <form action="." method="post" class="Forms">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {{field}}
+                        {% endfor %}
+                        <button type='submit' id="container__main--login--cadastro">CADASTRAR</button>
+                    </form>
             </div>
-
         </div>
-    
-
     </div>
-
 </body>
 </html>

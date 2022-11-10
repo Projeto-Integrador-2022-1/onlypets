@@ -24,7 +24,8 @@ def HomeLogin(request):
                 login(request,user)
                 return redirect(Homep)
             else:
-                return HttpResponse("Algo de errado não está certo")
+                print("não logou")
+                formulario.add_error('password','Usuário ou senha incorretas')
     return render(request,"login/Login.html",context=contexto)
 
 def Logout(request):
