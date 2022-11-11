@@ -6,15 +6,38 @@
 <TITLE>SERVIÇOS</TITLE>
 <link rel="stylesheet" href="./cadservc.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="container__main">
-            <div class="container__main--topo">
-                <img class= "container__main--topo--logo" src="../logocolorida.svg" alt="logo" width="200" height="200">
+<div class="container">
+
+    <div class="container__main">
+        <div class="container__main--login">
+            <div class="container__main--login--button">
+                <a href="./Login.html"><button  id="container__main--login--voltar"><img src="./seta_voltar.svg"></button></a>
             </div>
-            <div class="voltar">
-                <a href="../homepagevet.html" id="voltar"><img src="./seta_voltar.svg"></button></a>
+            <div>
+                <img class= "container__main--login--logo" src="./logo.svg" alt="logo" width="100" height="100">
+            </div>
+            <div class="container__main--login--title">
+                CADASTRO
+            </div>
+            <input type="text" name="nome" id="servico" placeholder="Serviço">
+            <input type="number" name="preco" id="preco" placeholder="Preço">
+            <h1 class="meusdias">Dias Disponíveis</h1>
+            <div class="dias">
+                <button class="dia">SEG<input name="segunda" class="dias_semana" type="checkbox"></button>
+                <button class="dia">TER<input name="terca" class="dias_semana" type="checkbox"></button>
+                <button class="dia">QUA<input name="quarta" class="dias_semana" type="checkbox"></button>
+                <button class="dia">QUI<input name="quinta" class="dias_semana" type="checkbox"></button>
+                <button class="dia">SEX<input name="sexta" class="dias_semana" type="checkbox"></button>
+                <button class="dia">SAB<input name="sabado" class="dias_semana" type="checkbox"></button>
+            </div>
+            <h1 class="meushorarios">Horários Disponíveis</h1>
+            <div class="horarios">
+                <button class="hora">8:00 - 12:00<input name="manha" class="horario" type="checkbox"></button>
+                <button class="hora">14:00 - 17:00<input name="tarde" class="horario" type="checkbox"></button>
             </div>
         </div>
     </div>
+</div>
 </body>
