@@ -4,5 +4,5 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', PetCad,name='login'),
+    path('', PetCad,name='petcad'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
