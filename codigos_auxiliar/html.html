@@ -1,26 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Como deixar um radio selecionado</title>
-</head>
-<body>
-<form>
-    <p>Seleciona sua marca favorita:</p>
-    <div>
-        <input type="radio" id="adidas" name="brand" value="adidas">
-        <label for="adidas">Adidas</label>
-    </div>
-    <div>
-        <input type="radio" id="nike" name="brand" value="nike" checked>
-        <label for="nike">Nike</label>
-    </div>    
-    <div>
-        <input type="radio" id="puma" name="brand" value="puma">
-        <label for="puma">Puma</label>
-    </div>
-    <div>
-        <input type="submit" value="Enviar">
-    </div>
-</form>
-</body>
-</html>
+
+<link rel="stylesheet" href="./html.css">
+<a href="#" id="logo"></a>
+<nav id="menu">
+    <a href="#" id="menu-icon"></a>
+    <ul>
+        <li style="list-style: none; display: inline"></li>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li style="list-style: none; display: inline"></li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li style="list-style: none; display: inline"></li>
+        <li>
+            <a href="#">Work</a>
+        </li>
+        <li style="list-style: none; display: inline"></li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li style="list-style: none; display: inline"></li>
+    </ul>
+</nav>
+<script>
+    $('#menu-icon').on('click', function() {
+        $('#menu').slideToggle('slow');
+    });
+</script>
