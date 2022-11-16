@@ -19,6 +19,15 @@
     display: flex;
     flex-direction: column;
 }
+.container__main--topo{
+    width: 100vw;
+    height: 187px;
+    left: -1px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    background: #DBEEF2;
+}
 #voltar{
     position: absolute;
     left:0px;
@@ -36,7 +45,7 @@
 
 .topo{
     position: relative;
-    top:2vh;
+    top:5vh;
     width: 400px;
     height: 150px;    
     background: #A3D9C9;
@@ -53,7 +62,7 @@
 
 .subtitulo{
     position: relative;
-    top:5vh;
+    top:10vh;
     font-size: 50px;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -99,6 +108,10 @@
     width: 100%;
     appearance: none;
 }
+.pix_div{
+    position: relative;
+    top:0vh;
+}
 .pix_div input:checked{
     background-color: #D9A330;
     border-radius: 21px;
@@ -106,7 +119,7 @@
 .pix{
     position: relative;
     left: 0vh;
-    top:12vh;
+    top:0vh;
     width: 600px;
     height: 200px;
     background: #C9EDE9;
@@ -118,29 +131,43 @@
     transition: 500ms all;
     border: 1px solid #D9A330;
 }
-
-.boleto_um{
-    height: 100%;
-    width: 100%;
-    appearance: none;
-}
-.boleto{
-    position: relative;
-    left: 0vh;
-    top:14vh;
-    width: 600px;
-    height: 200px;
-    background: #C9EDE9;
-    border-radius: 21px 21px 21px 21px;
-    font-size: larger;
-    text-align: center;
-    text-align: right;
-    transition: all;
-    transition: 500ms all;
-    border: 1px solid #D9A330;
+.pix:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;
 }
 
 .select{
     display: flex;
     top:25vh;
+}
+
+.cartao_img{
+    position: relative;
+    top:20vh;
+    left:5vh;  
+}
+
+.cartao_titulo{
+    position: relative;
+    top:-16vh;
+    left:20vh;
+}
+
+.pix_img{
+    position: relative;
+    top:-5vh;
+    left: -60vh;
+
+
+}
+.pix_titulo{
+    position: relative;
+    top:-16vh;
+    left:20vh;  
+}
+
+.formas{
+    position: relative;
+    left:5vh;
 }
