@@ -48,7 +48,7 @@
     width: 18vw;
     height: 18vh;
 }
-
+/* 
 .foto_user {
     position: relative;
     display: flex;
@@ -64,7 +64,7 @@
 .container__main--topo--foto_user {
     position: relative;
     border-radius: 50%;
-}
+} */
 
 .Title_pag {
     height: 75px;

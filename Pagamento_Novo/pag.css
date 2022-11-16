@@ -21,9 +21,7 @@
 }
 .container__main--topo{
     width: 100vw;
-    height: 187px;
-    left: -1px;
-    top: -5px;
+    height: 170px;
     display: flex;
     align-items: center;
     background: #DBEEF2;
@@ -48,7 +46,8 @@
     top:5vh;
     width: 400px;
     height: 150px;    
-    background: #A3D9C9;
+    /* background: #A3D9C9; */
+    background: #88BEB8;
     border-radius: 24px;
 }
 
@@ -57,13 +56,14 @@
     top:5vh;
     left:2.5vh;
     font-size: 50px;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .subtitulo{
     position: relative;
     top:10vh;
-    font-size: 50px;
+    font-size: 230%;
     font-family: 'Josefin Sans', sans-serif;
 }
 .formas{
@@ -76,30 +76,32 @@
     width: 100%;
     appearance: none;
 }
-.cartao_div input:checked{
+/* .cartao_div input:checked{
     background-color: #D9A330;
     border-radius: 21px;
-}
+} */
 
 .cartao{
     left: 0vh;
     top:10vh;
     width: 600px;
-    height: 200px;
-    background: #C9EDE9;
+    height: 150px;
     border-radius: 21px 21px 21px 21px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin-block: 27px;
+    margin-block: 25px;
     font-size: 100%;
     transition: 500ms all;
-    border: 1px solid #D9A330;
+    /* border: 1px solid #D9A330; */
+    background: #A3D9C9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
 .cartao:hover{
-    background: #D9A330;
-    color: #3B6E61;
+    background: #deebe7;
+    color: #deebe7;
     cursor: pointer;
 }
 
@@ -112,28 +114,30 @@
     position: relative;
     top:0vh;
 }
-.pix_div input:checked{
+/* .pix_div input:checked{
     background-color: #D9A330;
     border-radius: 21px;
-}
+} */
 .pix{
     position: relative;
     left: 0vh;
     top:0vh;
     width: 600px;
-    height: 200px;
-    background: #C9EDE9;
+    height: 150px;
     border-radius: 21px 21px 21px 21px;
     font-size: larger;
     text-align: center;
     text-align: right;
     transition: all;
     transition: 500ms all;
-    border: 1px solid #D9A330;
+    /* border: 1px solid #D9A330; */
+    background: #A3D9C9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
 .pix:hover{
-    background: #D9A330;
-    color: #3B6E61;
+    background: #deebe7;
+    color: #deebe7;
     cursor: pointer;
 }
 
@@ -149,6 +153,7 @@
 }
 
 .cartao_titulo{
+    font-family: 'Josefin Sans', sans-serif;
     position: relative;
     top:-16vh;
     left:20vh;
@@ -162,6 +167,7 @@
 
 }
 .pix_titulo{
+    font-family: 'Josefin Sans', sans-serif;
     position: relative;
     top:-16vh;
     left:20vh;  
@@ -171,3 +177,5 @@
     position: relative;
     left:5vh;
 }
+
+
