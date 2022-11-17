@@ -131,7 +131,7 @@ body{
 .modal .content {
     position: absolute;
     width: 70%;
-    height: 700px;
+    height: 800px;
     max-height: 100%;
     top: 10%;
     left: 15%;
@@ -201,6 +201,8 @@ body{
 }
 
 .conteudo{
+    justify-content: space-between;
+    gap: 10px;
     position: relative;
     top:5vh;
 }
@@ -230,4 +232,25 @@ body{
 .horarios input:checked{
     background-color: #D9A330;
     border-radius:21px ;
+}
+
+.excluir{
+    border-radius: 21px;
+    width: 200px;
+    height: 100px;
+    background-color: #ED7F7F;
+}
+
+.atualizar{
+    border-radius: 21px;    
+    width: 200px;
+    height: 100px;
+    background-color: #25991B;
+}
+.botoes{
+    border-radius: 21px;
+    position: relative;
+    top:5vh;
+    justify-content: space-between;
+    gap:100px;
 }
