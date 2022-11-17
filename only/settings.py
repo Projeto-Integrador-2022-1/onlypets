@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "login",
     "pet",
     "pagamento",
+    "veterinario",
+    
 ]
 
 MIDDLEWARE = [
