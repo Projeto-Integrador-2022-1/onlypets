@@ -7,7 +7,6 @@
 
 <body>
 <div class="container">
-
     <div class="container__main">
         <div class="container__main--login">
             <div class="container__main--login--button">
@@ -19,25 +18,29 @@
             <div class="container__main--login--title">
                 CADASTRO
             </div>
-            {{form.nome}}
-            {{form.preco}}
-            <h1 class="meusdias">Dias Disponíveis</h1>
-            <div class="dias">
-                {% csrf_token %}
-                {{form.seg}}
-                {{form.ter}}
-                {{form.qua}}
-                {{form.qui}}
-                {{form.sex}}
-                {{form.sab}}
-            </div>
-            <h1 class="meushorarios">Horários Disponíveis</h1>
-            <div class="horarios">
-                <button class="hora">8:00 - 12:00<input name="manha" class="horario" type="checkbox"></button>
-                <button class="hora">14:00 - 17:00<input name="tarde" class="horario" type="checkbox"></button>
-            </div>
-            <div class="cadastrar">
-                <button type="submit" class="botao_cadastrar" >CADASTRAR</button>
+            <div>
+                <form action="." method="post" class="Forms">
+                    {% csrf_token %}
+                    {{form.nome}}
+                    {{form.preco}}
+                    <h1 class="meusdias">Dias Disponíveis</h1>
+                    <div class="dias">
+                        <button class="dia">SEG{{form.seg}}</button>
+                        <button class="dia">TER{{form.ter}}</button>
+                        <button class="dia">QUA{{form.qua}}</button>
+                        <button class="dia">QUI{{form.qui}}</button>
+                        <button class="dia">SEX{{form.sex}}</button>
+                        <button class="dia">SAB{{form.sab}}</button>
+                    </div>
+                    <h1 class="meushorarios">Horários Disponíveis</h1>
+                    <div class="horarios">
+                        <button class="hora">8:00 - 12:00{{form.horad}}</button>
+                        <button class="hora">14:00 - 17:00{{form.horat}}</button>
+                    </div>
+                    <div class="cadastrar">
+                        <button type="submit" class="botao_cadastrar" >CADASTRAR</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

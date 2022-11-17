@@ -26,10 +26,12 @@ class Cadastro_Servico(forms.ModelForm):
         widgets = {
             'nome' : forms.TextInput(attrs={'placeholder':'Serviço'}),
             'preco' : forms.NumberInput(attrs={'placeholder': 'Preço'}),
-            'seg' : forms.CheckboxInput(attrs={'class':'dia'}),
-            'ter' : forms.CheckboxInput(attrs={'class':'dia'}),
-            'qua' : forms.CheckboxInput(attrs={'class':'dia'}),
-            'qui' : forms.CheckboxInput(attrs={'class':'dia'}),
-            'sex' : forms.CheckboxInput(attrs={'class':'dia'}),
-            'sab' : forms.CheckboxInput(attrs={'class':'dia'}),
+            'seg' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
+            'ter' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
+            'qua' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
+            'qui' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
+            'sex' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
+            'sab' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
+            'horad' : forms.CheckboxInput(attrs={'class':'horario'}),
+            'horat' : forms.CheckboxInput(attrs={'class':'horario'}),
         }

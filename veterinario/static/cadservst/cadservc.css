@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+.Forms{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .container {
     align-items: center;
     display: flex;
@@ -18,20 +26,6 @@
     width: 500px;
     display: flex;
     flex-direction: column;
-}
-
-.container__main--animals {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container__main--animals--pet-bottom {
-    position: relative;
-    top: -70px;
-}
-.container__main--animals--patas-bottom {
-    position: relative;
-    top: -20px;
 }
 
 .container__main--login--button {

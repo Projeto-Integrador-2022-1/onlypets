@@ -11,3 +11,5 @@ class Servico(models.Model):
     qui = models.BooleanField()
     sex = models.BooleanField()
     sab = models.BooleanField()
+    horad = models.BooleanField()
+    horat = models.BooleanField()
