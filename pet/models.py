@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 
 def picture_directory_path(instance, filename):
     extension = filename.split(".")[-1]
@@ -11,6 +12,10 @@ SEX_CHOICES = (
     ('m', 'Macho'),
     ('f', 'Fêmea'),
 )
+def sex_validator(valor):
+    if valor == '-':
+        raise ValidationError("Você não selecionou o sexo do seu pet.")
+        
 PELAGE_CHOICES = (
     ('-', 'Escolha a pelagem do pet'),
     ('PCL', 'Pelo curto e liso'),
@@ -19,15 +24,19 @@ PELAGE_CHOICES = (
     ('PLO', 'Pelo londo e ondulado'),
     ('PD', 'Pelagem dupla'),
 )
+def pelo_validator(valor):
+    if valor == '-':
+        raise ValidationError("Você não selecionou o tipo de pelo")
+
 class Cadastro_Pet(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     nome = models.CharField(max_length=300)
     peso = models.CharField(max_length=300,null=True,default='',blank=True)
     nascimento = models.CharField(max_length=300,blank=True,null=True,default='')
     especie = models.CharField(max_length=300)
-    sexo = models.CharField(max_length=300, choices=SEX_CHOICES, default='-')
+    sexo = models.CharField(max_length=300, choices=SEX_CHOICES, default='-', validators=[sex_validator])
     raca = models.CharField(max_length=300)
-    pelagem = models.CharField(max_length=300,choices=PELAGE_CHOICES,default='-')
+    pelagem = models.CharField(max_length=300,choices=PELAGE_CHOICES,default='-', validators=[pelo_validator])
     imagemPet = models.ImageField('Foto do pet',null=True,blank=True,upload_to=picture_directory_path)
     def __str__(self):
         return f'{self.nome}'
