@@ -22,4 +22,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', HomeLogin,name='login'),
     path('logout/', Logout,name='logout'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]

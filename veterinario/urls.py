@@ -21,4 +21,4 @@ from veterinario.views import Cad_Servico
 
 urlpatterns = [
     path('cadservico', Cad_Servico,name='Cadservico'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]

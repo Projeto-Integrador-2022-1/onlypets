@@ -5,4 +5,4 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', PetCad,name='petcad'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
