@@ -30,4 +30,4 @@ urlpatterns = [
     path("vet/",Vet,name='vet'),
     path("pet/",include("pet.urls")),
     path("vetpage/",include("veterinario.urls")),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -19,7 +19,7 @@
             <div class="selecao">
                 {% for c in clinicas %}
                 <div class="clinica_um">
-                    <a href={{ vet }}> <button class="clinica_um_button"><img class="clinica_um_imagem" src="{% static 'home/Clinicast/logopetshop.svg' %}" alt="logo" width="81" height="81"><h1 class="animalzao">{{c.nome}}</h1></button></a>
+                    <a href={{ vet }}> <button class="clinica_um_button"><img class="clinica_um_imagem" src={{c.imagemClinica.url}} alt="logo" width="81" height="81"><h1 class="animalzao">{{c.nome}}</h1></button></a>
                 </div>
                 {% endfor %}
             </div>
