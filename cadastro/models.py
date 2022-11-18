@@ -3,9 +3,9 @@ from django.db import models
 from clinicas.models import Clinica
 # Create your models here.
 class Cadastro_Pessoa(models.Model):
-    user = models.OneToOneField(User,on_delete=models.CASCADE)
+    user = models.OneToOneField(User,on_delete=models.CASCADE,related_name='perfil')
     Telefone = models.CharField(max_length=300)
-    Crmv = models.CharField(max_length=300)
+    Crmv = models.CharField(max_length=300,null=True,blank=True)
     Clinica = models.ForeignKey(Clinica,on_delete=models.CASCADE,null=True)
 
     def __str__(self):

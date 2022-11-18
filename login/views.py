@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate, login, logout
 from login.forms import Logando
-from only.views import Homep
+from only.views import Homep,Clinica
 
 # Create your views here.
 
@@ -16,6 +16,8 @@ def HomeLogin(request):
             print(user)
             if user is not None:
                 login(request,user)
+                if user.perfil.Crmv is not None:
+                    return redirect(Clinica)
                 return redirect(Homep)
             else:
                 formulario.add_error('password','Usuário ou senha incorretas')
