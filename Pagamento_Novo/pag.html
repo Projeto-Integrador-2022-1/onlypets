@@ -23,10 +23,43 @@
                 <h2 class ="subtitulo">SELECIONE A FORMA DE PAGAMENTO</h2>
             </div>
             <div class="formas">
-                <div class="cartao_div">
-                    <img class="cartao_img" src="./cartao.svg" alt="logo" width="100" height="100">   
-                    <button class="cartao"><input name="form_pag" class="cartao_um" type="radio"></button>
-                    <h1 class="cartao_titulo">CARTÃO DE CRÉDITO</h1>
+                <div class="card">
+                    <div class="content">
+                      <h1>Cartão de Crédito</h1>
+                      <label class="modal-open modal-label" for="modal-open">
+                             <p>Selecionar Cartão</p>
+                         </label>
+                      <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio" />
+                      <div class="modal">
+                        <label class="modal-label overlay">
+                                  <input type="radio" name="modal" value="close" class="modal-radio"/>
+                              </label>
+                        <div class="content">
+                          <div class="top">
+                            <label class="modal-label close-btn">
+                                      <input type="radio" name="modal" value="close" class="modal-radio"/>
+                                  </label>
+                          </div>
+                          <div class="titulo">
+                          </div>
+                          <div class="conteudo">
+                            <h1>CARTÕES</h1>
+                            <div class="cartoes">
+                                <button class="cartao">6857 **** **** 4978<input name="cartao" class="crtoes_pag" type="checkbox"></button>
+                            </div>
+                            <h2 class="subtitulo">PARCELAS DISPONÍVEIS</h2>
+                            <div class="parcela">
+                                <button class="parcelas">1X DE <input name="um" class="horario" type="checkbox"></button>
+                                <button class="parcelas">2X DE<input name="tarde" class="horario" type="checkbox"></button>
+                                <br>
+                            <div class="botoes">
+                              <button type="submit" class="select">SELECIONAR</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="pix_div">
                     <button class="pix"><input name="form_pag" class="pix_um" type="radio"></button>
