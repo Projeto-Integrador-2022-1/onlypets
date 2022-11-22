@@ -23,10 +23,16 @@
                 <h1 class="placa_texto">VETERINÁRIOS</h1>
             </div>
             <div class="veterinarios">
+                {% for v in vets %}
                 <div class="veterinario_um">
-                    <a href="{% static 'home/Vetst/veterinarios/joana.html' %}"><button class="vet_um_button"><img class="vet_um_imagem" src="{% static 'home/Vetst/vetum.svg' %}" alt="logo" width="150" height="150"><h1 class="nome">Joana Lima</h1><h2 class ="bio">Especialista em Serviços Gerais</h2></button></a>
-                    <!-- img class="estrela" src="./estrela.svg" alt="" width="50" height="50"-->
+                    <a href="{% static 'home/Vetst/veterinarios/joana.html' %}">
+                        <button class="vet_um_button">
+                            <img class="vet_um_imagem" src={{v.perfil.imagemVet.url}} alt="logo" width="150" height="150">
+                            <h1 class="nome">{{v.username}}</h1>
+                        </button>
+                    </a>
             </div>
+            {% endfor %}
 
          
         </div>

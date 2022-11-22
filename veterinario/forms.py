@@ -7,6 +7,7 @@ class Cadastro_Vet_Form(forms.ModelForm):
     telefone = forms.CharField(max_length=11,widget=forms.TextInput(attrs={'placeholder':'Telefone'}))
     crmv = forms.CharField(widget=forms.TextInput(attrs={'placeholder':'CRMV'}))
     clinica = forms.ModelChoiceField(queryset=Clinica.objects.all())
+    imagemVet = forms.FileField(widget=forms.FileInput(attrs={'required':False}))
 
     class Meta:
         model = User

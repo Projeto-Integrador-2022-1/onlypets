@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from clinicas import models
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User 
 
 
 # Create your views here.
@@ -24,7 +25,11 @@ def Clinica(request):
     }
     return render(request,"home/Clinica/clinicas.html",context=contexto)
 
-def Vet(request):
-    return render(request,"home/Vet/vets.html")
+def Vet(request,id):
+    veterinarios = User.objects.filter(perfil__Clinica = id)
+    contexto={
+        "vets" : veterinarios
+    }
+    return render(request,"home/Vet/vets.html",context=contexto)
 
 

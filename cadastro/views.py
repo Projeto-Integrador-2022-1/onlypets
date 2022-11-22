@@ -33,7 +33,7 @@ def VetCad(request):
         'form' : formulario,
     }
     if request.method == 'POST':
-        formulario = Cadastro_Vet_Form(request.POST)
+        formulario = Cadastro_Vet_Form(request.POST,request.FILES)
         if formulario.is_valid():
             novo = formulario.save()
             senha_cryp = make_password(request.POST['password'])
@@ -43,6 +43,7 @@ def VetCad(request):
             perfil.Telefone = formulario.cleaned_data['telefone']
             perfil.Crmv = formulario.cleaned_data['crmv']
             perfil.Clinica = formulario.cleaned_data['clinica']
+            perfil.imagemVet = formulario.cleaned_data['imagemVet']
             perfil.user = novo
             perfil.save()
             return redirect(HomeLogin)
