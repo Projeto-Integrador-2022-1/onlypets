@@ -61,7 +61,7 @@ body {
     background-color: #DBEEF2;
 }
 
-.top span {
+.top p {
     width: 80px;
     height: 14px;
     font-style: normal;
@@ -72,7 +72,7 @@ body {
     color: #000000;
 }
 
-.top span:last-of-type {
+.top p:last-of-type {
     margin-left: auto;
     margin-right: 11px;
 }
@@ -101,7 +101,7 @@ body {
 
 .content {
     margin-inline: 40px;
-    width: 60%;
+    width: 75%;
     height: 336px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -118,7 +118,7 @@ body {
 }
 .content h2 {
     grid-row: 1 / 3;
-    grid-column: 6 / 9;
+    grid-column: 4 / 9;
     font-family: 'Chau Philomene One';
     font-style: italic;
     /* font-weight: bold; */
@@ -133,7 +133,7 @@ body {
 
 .content p {
     grid-row: 4 / 9;
-    grid-column: 6 / 9;
+    grid-column: 4 / 9;
     /* background-color: blue; */
     /* width: 131px;
     height: 54px; */
@@ -153,9 +153,10 @@ body {
 
 .content #dog {
     width: 575px;
+    /* width: 175%; */
     /* background-color: red; */
-    grid-row: 1 / 6;
-    grid-column: 1 / 6;
+    grid-row: 1 / 4;
+    grid-column: 1 / 4;
 }
 
 .services {
@@ -252,12 +253,12 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 1008px) {
     .content {
         display: flex;
         align-items: center;
         margin-inline: 40px;
-        width: 80%;
+        width: 90%;
         height: 264px;
         /* display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -278,18 +279,11 @@ body {
         /* background-color: red; */
         grid-row: 1 / 5;
         margin: 0;
-        /* grid-column: 2 / 5; */
-        /* font-weight: 400; */
         font-size: 30px;
         line-height: 41px;
     }
 
     .content p {
-        /* grid-row: 6 / 10;
-        grid-column: 1 / 5; */
-        /* background-color: blue; */
-        /* width: 131px;
-        height: 54px; */
         margin-left: 5px;
         font-family: 'Josefin Sans';
         font-style: normal;
@@ -315,11 +309,8 @@ body {
         align-items: flex-end;
         margin-left: auto;
         margin-top: auto;
-        /* grid-row: 8 / 9;
-        grid-column: 6 / 10; */
-        /* background-color: yellow; */
         size-adjust: 50%;
-        width: 100%;
+        width: 10rem;
         height: auto;
     }
 
