@@ -1,51 +1,71 @@
-*{
-    margin:  0;
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container__main--topo{
-width: 100vw;
-height: 187px;
-left: -1px;
-top: -5px;
-display: flex;
-align-items: center;
 
-background: #DBEEF2;
+.container__main--topo {
+    width: 100vw;
+    height: 187px;
+    left: -1px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+
+    background: #DBEEF2;
 }
-.container{
+
+.container {
     width: 100vw;
     height: 100vh;
 
 }
-.container__main{
-    
+
+.container__main {
+
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-#voltar{
+#voltar {
     position: absolute;
-    left:0px;
+    left: 0px;
     background-color: #FFFFFF;
     border: none;
     height: 80px;
     width: 80px;
 }
 
-#voltar:hover{
+#voltar:hover {
     background: #D9A330;
     color: #3B6E61;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
+.clinicas {
+    /* position: relative; */
+    margin-top: 110px;
+    width: 370px;
+    height: 100px;
+    background: #88BEB8;
+    display: flex;
+    justify-content: center;
+    font-family: 'Jaldi', sans-serif;
+    color: #FFFFFF;
+    box-shadow: 0px 3.36px 3.36px rgba(0, 0, 0, 0.25);
+    border-radius: 10.92px;
+    font-size: 40px;
+}
 
-.clinica_um_button{
+.clinica_um_button {
     position: relative;
-    top:10vh;
-    width: 400px;
+    top: 10vh;
+    width: 500px;
     height: 155px;
     background: #C9EDE9;
     border-radius: 21px 21px 21px 21px;
@@ -55,21 +75,24 @@ background: #DBEEF2;
     transition: all;
     transition: 500ms all;
 }
-.clinica_um_button:hover{
+
+.clinica_um_button:hover {
     background: #D9A330;
     color: #3B6E61;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
-.clinica_um_imagem{
+
+.clinica_um_imagem {
     position: relative;
     width: 150px;
     height: 150px;
-    left: -61%;
+    left: -68%;
     top: 1px;
     border-radius: 25px 25px 25px 25px;
 }
 
-.animalzao{
+.animalzao {
     position: absolute;
     width: 200px;
     height: 50px;
@@ -83,4 +106,16 @@ background: #DBEEF2;
     display: flex;
     align-items: center;
     color: #000000;
+}
+
+@media only screen and (max-width: 900px) {
+    /* .menu { width:600px; } */
+     .clinicas{
+        width: 409px;
+        height: 79px;
+    }
+    .clinica_um_button{
+        width: 620px;
+        height: 104px;
+     }
 }
