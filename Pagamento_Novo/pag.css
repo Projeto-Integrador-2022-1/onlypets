@@ -138,7 +138,7 @@
 
 
 .card {
-    width: 250px;
+    width: 600px;
     height: 180px;
     border-radius: 5px;
     overflow: hidden;
@@ -282,6 +282,80 @@
 }
 
 .cartao{
-    width:200px;
-    height: 50px;
+    align-items: center;
+    font-size: 30px;
+    left:2vh;
+    position: relative;
+    background-color:#3B6E61;
+    top:10vh;
+    width:400px;
+    height: 80px;
+    border: none;
+    border-radius: 21px;
+    transition: 500ms all;
+    border: 1px solid #D9A330;
+}
+.logo_cartao{
+    position: relative;
+    left:40vh;
+}
+.cartoes{
+    display: flex;  
+    left:0;
+}
+.parcela{
+    position: relative;
+    top:20vh;
+    left:-64vh;
+}
+.parcelas{
+    background-color: #D9A330;
+    font-size: 25px;;
+    width: 180px;
+    height: 40px;
+    position: relative;
+    left: -3vh;
+    top:30vh;
+    border:none;
+    border-radius: 21px;
+}
+.select{
+    width: 300px;
+    height: 80px;
+    position: relative;
+    top:35vh;
+    left:0vh;
+    background-color: #3B6E61;
+    border:none;
+    border-radius: 21px;
+    font-size: 30px;
+}
+.cartoes_pag{
+    width: 100%;
+    height: 100%;
+    appearance: none;
+}
+.cartoes input:checked{
+    background-color: #D9A330;
+    border-radius: 21px;
+}
+.num{
+    position:relative;
+    top:12vh;
+    left:-33vh;
+}
+.cartao:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;
+}
+.titulo{
+    font-size: 40px;
+    position: relative;
+    left:25vh;
+}
+.select:hover{
+    background: #D9A330;
+    color:#3B6E61;
+    cursor:pointer;
 }
