@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
 *{
     margin:  0;
     padding: 0;
@@ -39,6 +41,19 @@ background: #DBEEF2;
     background: #D9A330;
     color: #3B6E61;
     cursor: pointer;;
+}
+.clinicas {
+    margin-top: 60px;
+    font-family: 'Jaldi', sans-serif;
+    background: #88BEB8;
+    width: 235px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px white;
+    font-size: xx-large;
 }
 
 

@@ -45,7 +45,7 @@ background: #DBEEF2;
     width: 400px;
     height: 100px;
     left: 0%;
-    top: 154.6px;
+    top: 70px;
     background: #88BEB8;
     box-shadow: 0px 3.36px 3.36px rgba(0, 0, 0, 0.25);
     border-radius: 10.92px;
@@ -56,8 +56,7 @@ background: #DBEEF2;
     width: 188.16px;
     height: 36.12px;
     left: 5px;
-    top: 40px;
-
+    top: -55px;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 700;
@@ -65,3 +64,77 @@ background: #DBEEF2;
     line-height: 23px;
     text-transform: uppercase;
 }
+
+.placa_imagem{
+    position: relative;
+    width: 112.56px;
+    height: 88.2px;
+    left: 134px;
+    top: -75px;
+}
+
+.vet_um_button{
+    position: relative;
+    left: 0px;
+    top:15vh;
+    width: 500px;
+    height: 155px;
+    background: #C9EDE9;
+    border-radius: 21px 21px 21px 21px;
+    font-size: larger;
+    text-align: center;
+    text-align: right;
+    transition: all;
+    transition: 500ms all;
+}
+
+.vet_um_button:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+.vet_um_imagem{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: -69%;
+    top: 1px;
+}
+.nome{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 170px;
+    top: 10px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.bio{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 100px;
+    top: 60px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.estrela{
+    position: relative;
+    left:-100px;
+}
+
