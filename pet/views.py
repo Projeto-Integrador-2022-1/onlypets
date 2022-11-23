@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from pet.forms import Pet_Forms
+from pet.models import Cadastro_Pet
 # Create your views here.
 
 def PetCad(request):
@@ -15,3 +16,10 @@ def PetCad(request):
             print('Erro')
     contexto={ 'form' : formulario,}
     return render(request,"pet/PetCad.html",context=contexto)
+
+def ListaPet(request):
+    pets = Cadastro_Pet.objects.filter(user=request.user.id)
+    contexto={
+        'pets' : pets
+    }
+    return render(request,"listapet/pets.html",context=contexto)

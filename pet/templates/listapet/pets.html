@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Pet</title>
+  <link rel="stylesheet" href="{% static 'listapetst/pets.css' %}">
+</html>
+</head>
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "container__main--topo--logo" src="{% static 'listapetst/logocolorida.svg' %}" alt="logo" width="200" height="200">
+            </div>
+            <div class="voltar">
+                <a href={% url 'clinica' %}><button  id="voltar"><img src="{% static 'listapetst/seta_voltar.svg' %}"></button></a>
+            </div>
+            <div class="topo">
+                <h1 class="titulo">SELECIONE O PET PARA ATENDIMENTO</h1>
+            </div>
+
+            <div class="pets">
+                <div class="bloco_cad">
+                    <a href={% url 'petcad' %}>
+                        <button class="cadastro_pet">
+                            <h2 class="convite">Ainda não tem pets aparecendo?</h2>
+                            <img class="logo_cadastro" img src="{% static 'listapetst/logo_cadastro.svg' %}">
+                            <br>CLIQUE AQUI E CADASTRE SEU PET
+                        </button>
+                    </a>
+                </div>
+                {% for p in pets %}
+                <div class="pet_um_div">
+                    <button class="pet_butao_um">
+                        <input name="pet" class="pet_um" type="radio">
+                        <h1>{{p.nome}}</h1>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+            <button type="submit" class="prosseguir">PROSSEGUIR</button>
+        </div>
+    </div>
+</body>
