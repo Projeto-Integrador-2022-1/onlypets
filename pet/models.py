@@ -29,7 +29,7 @@ def pelo_validator(valor):
         raise ValidationError("Você não selecionou o tipo de pelo")
 
 class Cadastro_Pet(models.Model):
-    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='pet')
     nome = models.CharField(max_length=300)
     peso = models.CharField(max_length=300,null=True,default='',blank=True)
     nascimento = models.CharField(max_length=300,blank=True,null=True,default='')
