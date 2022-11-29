@@ -31,12 +31,14 @@
                     </a>
                 </div>
                 {% for p in pets %}
+                <a href={% url "clinica" %} style="text-decoration: none;">
                 <div class="pet_um_div">
                     <button class="pet_butao_um">
-                        <input name="pet" class="pet_um" type="radio">
                         <h1>{{p.nome}}</h1>
+                        <img class="pet_img" src={{p.imagemPet.url}} alt="Foto do pet" width="350" height="350">
                     </button>
                 </div>
+                </a>
                 {% endfor %}
             </div>
             <button type="submit" class="prosseguir">PROSSEGUIR</button>
