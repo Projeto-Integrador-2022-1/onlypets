@@ -228,7 +228,7 @@
 .modal .content {
     position: absolute;
     width: 70%;
-    height: 800px;
+    height: 600px;
     max-height: 100%;
     top: 10%;
     left: 15%;
@@ -305,7 +305,6 @@
 }
 .parcela{
     position: relative;
-    top:20vh;
     left:-64vh;
 }
 .parcelas{
