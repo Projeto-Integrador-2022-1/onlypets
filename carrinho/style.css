@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container__main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.container__main--topo{
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    background: #DBEEF2;
+}
+#voltar{
+    position: absolute;
+    left:0px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 80px;
+    width: 80px;
+}
+
+#voltar:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+
+.topo{
+    text-align: center;
+    margin-block:10px;
+    font-size: 38px;   
+    color: #397784;
+    font-family: 'Jaldi', sans-serif;
+}
+
+.fundo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jaldi', sans-serif;
+    width: 580px;
+    height: 660px;
+    background: #EEF9FB;
+    border-radius: 48px 48px 0px 0px;
+}
+
+.bloco-compras{
+    margin-block: 15px;
+    width: 400px;
+    height: 85px;
+    border-radius: 32px;
+    background: #A3D9C9;
+}
+
+.subtotal{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-block: 15px;
+    width: 450px;
+    height: 100px;
+    border-radius: 32px;
+    background: #A3D9C9;
+    margin-top: 77%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+#sub{
+    
+}
+
+#button{
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font: bold;
+    margin-block: 15px;
+    width: 200px;
+    height: 60px;
+    background: #3B6E61;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    color: #D9A330;
+}
