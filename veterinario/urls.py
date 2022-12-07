@@ -15,10 +15,8 @@ Including another URLconf
 """
 
 from django.urls import path
-from django.conf import settings
-from django.conf.urls.static import static
 from veterinario.views import Cad_Servico
 
 urlpatterns = [
-    path('cadservico', Cad_Servico,name='Cadservico'),
+    path('cadserv', Cad_Servico,name='Cadservico'),
 ]
