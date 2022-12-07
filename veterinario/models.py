@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Servico(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='servico')
     nome = models.CharField(max_length=300)
     preco = models.CharField(max_length=300)
     seg = models.BooleanField()
