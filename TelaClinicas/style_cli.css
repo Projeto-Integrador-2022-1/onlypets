@@ -1,47 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); */
 
-*{
-    margin:  0;
-    padding: 0;
+* {
     box-sizing: border-box;
 }
-.container__main--topo{
-width: 100vw;
-height: 187px;
-left: -1px;
-top: -5px;
-display: flex;
-align-items: center;
 
-background: #DBEEF2;
+body {
+    padding: 0;
+    margin: 0;
 }
-.container{
+
+.display-page {
     width: 100vw;
-    height: 100vh;
-
+    max-height: 100%;
+    min-height: 100vh;
+    background-color: white;
 }
-.container__main{
-    
+
+#screen-size {
+    width: 100vw;
+    height: 100%;
+    border-radius: 0px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 79px;
+    width: 100vw;
+    background-color: #DBEEF2;
+}
+
+#site-logo {
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.container__main {
+    width: 100vw;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-#voltar{
+.seta-retornar {
     position: absolute;
-    left:0px;
-    background-color: #FFFFFF;
+    left: 10px;
+    /* background-color: #FFFFFF; */
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-45deg);
+}
+#voltar {
     border: none;
-    height: 80px;
-    width: 80px;
 }
 
-#voltar:hover{
+#voltar:hover {
     background: #D9A330;
     color: #3B6E61;
-    cursor: pointer;;
+    cursor: pointer;
 }
+
 .clinicas {
     margin-top: 60px;
     font-family: 'Jaldi', sans-serif;
@@ -57,39 +81,35 @@ background: #DBEEF2;
 }
 
 
-.clinica_um_button{
-    position: relative;
-    top:10vh;
+.clinica_um_button {
+    display: flex;
+    align-items: center;
     width: 400px;
     height: 155px;
-    background: #C9EDE9;
-    border-radius: 21px 21px 21px 21px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 21px;
+    margin-top: 200px;
     font-size: larger;
     text-align: center;
     text-align: right;
-    transition: all;
     transition: 500ms all;
 }
-.clinica_um_button:hover{
+
+.clinica_um_button:hover {
     background: #D9A330;
     color: #3B6E61;
-    cursor: pointer;;
+    cursor: pointer;
 }
-.clinica_um_imagem{
-    position: relative;
+
+.clinica_um_imagem {
     width: 150px;
     height: 150px;
-    left: -61%;
-    top: 1px;
     border-radius: 25px 25px 25px 25px;
 }
 
-.animalzao{
-    position: absolute;
+.animalzao {
     width: 200px;
     height: 50px;
-    left: 170px;
-    top: 50px;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
@@ -98,4 +118,8 @@ background: #DBEEF2;
     display: flex;
     align-items: center;
     color: #000000;
+}
+
+.clinica_um a {
+    text-decoration: none;
 }
