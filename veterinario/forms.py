@@ -35,4 +35,5 @@ class Cadastro_Servico(forms.ModelForm):
             'sab' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
             'horad' : forms.CheckboxInput(attrs={'class':'horario'}),
             'horat' : forms.CheckboxInput(attrs={'class':'horario'}),
+            'user' : forms.HiddenInput(),
         }

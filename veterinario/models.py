@@ -14,3 +14,5 @@ class Servico(models.Model):
     sab = models.BooleanField()
     horad = models.BooleanField()
     horat = models.BooleanField()
+    def __str__(self):
+        return f'{self.nome}'

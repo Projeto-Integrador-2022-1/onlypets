@@ -18,5 +18,5 @@ from django.urls import path
 from veterinario.views import Cad_Servico
 
 urlpatterns = [
-    path('cadserv', Cad_Servico,name='Cadservico'),
+    path('', Cad_Servico,name='Cadservico'),
 ]

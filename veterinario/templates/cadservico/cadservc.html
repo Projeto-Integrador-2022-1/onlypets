@@ -25,18 +25,43 @@
                     {{form.preco}}
                     <h1 class="meusdias">Dias Disponíveis</h1>
                     <div class="dias">
-                        <button class="dia">SEG{{form.seg}}</button>
-                        <button class="dia">TER{{form.ter}}</button>
-                        <button class="dia">QUA{{form.qua}}</button>
-                        <button class="dia">QUI{{form.qui}}</button>
-                        <button class="dia">SEX{{form.sex}}</button>
-                        <button class="dia">SAB{{form.sab}}</button>
+                        <div>
+                            SEG
+                            <button class="dia">{{form.seg}}</button>
+                        </div>
+                        <div>
+                            TER
+                            <button class="dia">{{form.ter}}</button>
+                        </div>
+                        <div>
+                            QUA
+                            <button class="dia">{{form.qua}}</button>
+                        </div>
+                        <div>
+                            QUI
+                            <button class="dia">{{form.qui}}</button>
+                        </div>
+                        <div>
+                            SEX
+                            <button class="dia">{{form.sex}}</button>
+                        </div>
+                        <div>
+                            SAB
+                            <button class="dia">{{form.sab}}</button>
+                        </div>
                     </div>
                     <h1 class="meushorarios">Horários Disponíveis</h1>
                     <div class="horarios">
-                        <button class="hora">8:00 - 12:00{{form.horad}}</button>
-                        <button class="hora">14:00 - 17:00{{form.horat}}</button>
+                        <div>
+                            8:00 - 12:00
+                            <button class="hora">{{form.horad}}</button>
+                        </div>
+                        <div>
+                            14:00 - 17:00
+                            <button class="hora">{{form.horat}}</button>
+                        </div>
                     </div>
+                    {{form.user}}
                         <button type="submit" class="botao_cadastrar" >CADASTRAR</button>
                 </form>
             </div>
