@@ -117,26 +117,27 @@
                             </tr>
                             <tr class="pagamento">
                                 <td>
-                                    <div class="row">
-                                        <div class="col">
-                                        <h2>SELECIONE A FORMA DE PAGAMENTO</h2>
-                                        <div class="tabs">
-                                            <div class="tab">
-                                            <input type="checkbox" id="chck1">
-                                            <label class="tab-label" for="chck1">Cartão de Crédito</label>
-                                            <div class="tab-content">
-                                                
-                                            </div>
-                                            </div>
-                                            <div class="tab">
-                                            <input type="checkbox" id="chck2">
-                                            <label class="tab-label" for="chck2">PIX</label>
-                                            <div class="tab-content">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
+                                  <ul>
+                                    <li>
+                                      <input type="checkbox" checked>
+                                      <i></i>
+                                      <h2>Cartão de Crédito</h2>
+                                      <p>
+                                        <input type="text" name="nome" id="usuario" placeholder="Nome do Titular">
+                                        <input type="number" name="cartao" id="cartao" placeholder="Número do Cartão">
+                                        Data de Vencimento:
+                                        <input type="date" name="validade" id="val_cartao" placeholder="Data de Vencimento">
+                                        <input type="number" name="cvv" id="seguranca_code" placeholder="CVV" min lenght="3" max lenght="3">
+                                        <select>
+                                          <option selected>Preço a Vista</option>
+                                          <option>1x de ** </option>
+                                          <option>2x de ** </option>
+                                          <option>3x de ** </option>
+                                        </select>
+                                        <button class="conf_cartao" type="submit">Confirmar Pagamento</button>
+                                        </p>
+                                    </li>
+                                    
                                 </td>
                             </tr>
                       <tr class="checkoutrow">
