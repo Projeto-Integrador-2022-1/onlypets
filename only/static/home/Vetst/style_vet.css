@@ -74,9 +74,6 @@ background: #DBEEF2;
 }
 
 .vet_um_button{
-    position: relative;
-    left: 0px;
-    top:15vh;
     width: 500px;
     height: 155px;
     background: #C9EDE9;
@@ -95,18 +92,11 @@ background: #DBEEF2;
 }
 
 .vet_um_imagem{
-    position: relative;
     width: 150px;
     height: 150px;
-    left: -69%;
-    top: 1px;
 }
+
 .nome{
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 170px;
-    top: 10px;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
@@ -117,24 +107,22 @@ background: #DBEEF2;
     color: #000000;
 }
 
-.bio{
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 100px;
-    top: 60px;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+.infos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoname{
+    width: 30%;
+    height: 100%;
     display: flex;
     align-items: center;
-    color: #000000;
 }
 
-.estrela{
-    position: relative;
-    left:-100px;
+.veterinarios{
+    margin-top: 100px;
 }
-
+.veterinario_um{
+    margin-top: 5px;
+}
