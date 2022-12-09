@@ -413,7 +413,3 @@ ul {
     transform-origin: top center;
     transform: rotateX(0deg); } }
 
-.pag_cartao{
-  position: relative;
-  top:80vh;
-}

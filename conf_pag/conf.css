@@ -1,0 +1,156 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container__main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container__main--topo{
+    width: 100vw;
+    height: 180px;
+    left: -1px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    background: #DBEEF2;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.title {
+	font-size: 2em;
+	width: 100%;
+	text-align: center;
+}
+
+.title--white {
+	color: #fff;
+}
+
+.pricing-card {
+	width: 300px;
+	height: 500px;
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #7DBFCF;
+}
+
+.pricing-card:hover {
+	transform: translateY(-5px);
+	transition: transform .5s;
+}
+
+.pricing-card_header{
+	width: 100%;
+	color: #fff;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.pricing-card_header:after {
+	content: '';
+	width:  100%;
+	height: 3em;
+	background-color: inherit;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	transform: skewY(7deg);
+}
+
+.princing-card_header--ultimate {
+	background-color: #8e44ad;
+}
+
+.princing-card_header--standard {
+	background-color: #f1c40f;
+}
+
+.princing-card_header--super {
+	background-color: #2980b9;
+}
+
+.princing-card_header--basic {
+	background-color: #1abc9c;
+}
+
+.pricing-card_title {
+	z-index: 1;
+}
+
+.pricing-card_cost {
+	font-size: 2em;
+}
+
+.pricing-card_money-symbol {
+	font-size: 1em;
+	position: absolute;
+	top: .8em;
+	right: 1.2em;
+}
+
+.pricing-card_list-info {
+	width: 90%;
+	padding: 0;
+}
+
+.pricing-card_item{
+	font-size: 1.2em;
+	text-align: center;
+	list-style: none;
+	padding: .5em;
+	border-bottom: .02em solid #ecf0f1;
+}
+
+
+.btn {
+	width: 80%;
+	padding: .5em .5em;
+	position: relative;
+	bottom: 2em;
+	border: 0;
+	font-size: 15px;
+	color: #fff;
+}
+
+.btn:hover{
+	transform: translateY(-2px);
+	cursor: pointer;
+	transition: all;
+}
+
+
+.btn--ultimate {
+	background-color: #8e44ad;
+}
+
+.btn--standard {
+	background-color: #f1c40f;
+}
+
+.btn--super {
+	background-color: #2980b9;
+}
+
+.btn--basic {
+	background-color: #1abc9c;
+}
