@@ -36,7 +36,7 @@
                       <tr class="productitm">
                         <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
                         <td><img src="./exm-sang.svg" class="thumb"></td>
-                        <td></td>
+                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
                         <td>Exame de Sangue</td>
                         <td>R$120.00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
@@ -44,7 +44,7 @@
                       <tr class="productitm">
                         <!-- http://www.amazon.com/Stuff-My-Cat-The-Book/dp/0811855384 -->
                         <td><img src="./radiografia.svg" class="thumb"></td>
-                        <td></td>
+                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
                         <td>Radiografia</td>
                         <td>R$90,00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
@@ -52,7 +52,7 @@
                       <tr class="productitm">
                         <!-- http://www.amazon.com/SpongeBob-SquarePants-The-First-Episodes/dp/B002DYJTVW -->
                         <td><img src="./vacina.svg" class="thumb"></td>
-                        <td></td>
+                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
                         <td>Vacinação</td>
                         <td>R$55.00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
@@ -60,7 +60,7 @@
                       <tr class="productitm">
                         <!-- http://www.barnesandnoble.com/w/javascript-and-jquery-david-sawyer-mcfarland/1100405042 -->
                         <td><img src="rotina.svg" class="thumb"></td>
-                        <td></td>
+                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
                         <td>Avaliação Geral</td>
                         <td>R$80,00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
@@ -76,18 +76,19 @@
                       <tr class="totalprice">
                         <td class="light">Total:</td>
                         <td colspan="2">&nbsp;</td>
-                        <td colspan="2"><span class="thick">R$347,00</span></td>
+                        <td colspan="2"><span class="thick">R$00,00</span></td>
                       </tr>
                       <tr class="marcar-dia">
                         <td class="light">Data:</td>
                         <td colspan="2">&nbsp;</td>
                         <td colspan="2"><span class="thick">
                             <select class="selecao">
-                                <option selected>*ESCOLHA A DATA*</option>
-                                <option>13/12</option>
-                                <option>14/12</option>
-                                <option>15/12</option>
-                                <option>16/12</option>
+                                <option selected>*ESCOLHA O DIA*</option>
+                                <option>SEG</option>
+                                <option>TER</option>
+                                <option>QUA</option>
+                                <option>QUI</option>
+                                <option>SEX</option>
                             </select>
                         </span>
                         </td>
@@ -134,8 +135,20 @@
                                           <option>2x de ** </option>
                                           <option>3x de ** </option>
                                         </select>
-                                        <button class="conf_cartao" type="submit">Confirmar Pagamento</button>
                                         </p>
+                                    </li>                                   
+                                </td>
+                                <td>
+                                  &nbsp;
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>
+                                      <input type="checkbox" checked>
+                                      <i></i>
+                                      <h2>Pagamento por Pix</h2>
+                                      <p>
+                                        <img src="./qrcode.svg" alt="QR Code">
                                     </li>
                                     
                                 </td>
