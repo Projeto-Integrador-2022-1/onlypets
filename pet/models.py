@@ -37,6 +37,6 @@ class Cadastro_Pet(models.Model):
     sexo = models.CharField(max_length=300, choices=SEX_CHOICES, default='-', validators=[sex_validator])
     raca = models.CharField(max_length=300)
     pelagem = models.CharField(max_length=300,choices=PELAGE_CHOICES,default='-', validators=[pelo_validator])
-    imagemPet = models.ImageField('Foto do pet',null=True,blank=True,upload_to=picture_directory_path)
+    imagemPet = models.ImageField('Foto do pet',null=True,blank=True,upload_to=picture_directory_path,default='pet_default/default_pic.png')
     def __str__(self):
         return f'{self.nome}'

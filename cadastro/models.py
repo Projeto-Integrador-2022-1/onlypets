@@ -11,7 +11,7 @@ class Cadastro_Pessoa(models.Model):
     Telefone = models.CharField(max_length=300)
     Crmv = models.CharField(max_length=300,null=True,blank=True)
     Clinica = models.ForeignKey(Clinica,on_delete=models.CASCADE,null=True)
-    imagemVet = models.ImageField('Foto do Veterinário',null=True,blank=True,upload_to=picture_directory_path)
+    imagemVet = models.ImageField('Foto do Veterinário',null=True,blank=True,upload_to=picture_directory_path,default='vet_default/default_pic.png')
 
     def __str__(self):
         return self.user.username
