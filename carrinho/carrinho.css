@@ -20,13 +20,15 @@
 .container__main--topo{
     width: 100vw;
     height: 170px;
+    position: relative;
+    top:-3vh;
     display: flex;
     align-items: center;
     background: #DBEEF2;
 }
 #voltar{
     position: absolute;
-    left:0px;
+    left:40px;
     background-color: #caccf7 url('https://i.imgur.com/Syv2IVk.png'); /* https://subtlepatterns.com/old-map/ */
     border: none;
     height: 80px;
