@@ -25,7 +25,7 @@ class Cadastro_Servico(forms.ModelForm):
         model = Servico
         fields = '__all__'
         widgets = {
-            'nome' : forms.TextInput(attrs={'placeholder':'Serviço'}),
+            'serv' : forms.Select(),
             'preco' : forms.NumberInput(attrs={'placeholder': 'Preço'}),
             'seg' : forms.CheckboxInput(attrs={'class':'dias_semana'}),
             'ter' : forms.CheckboxInput(attrs={'class':'dias_semana'}),

@@ -1,10 +1,22 @@
 from django.contrib.auth.models import User 
 from django.db import models
+from django.core.exceptions import ValidationError
+
+SERVIÇOS=(
+    ('-','Escolha um Serviço'),
+    ('ES','Exame de Sangue'),
+    ('RD','Radiografia'),
+    ('VC','Vacinação'),
+    ('AG','Avaliação Geral'),
+)
+def sev_validator(valor):
+    if valor == '-':
+        raise ValidationError("Você não selecionou um serviço.")
 
 # Create your models here.
 class Servico(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='servico')
-    nome = models.CharField(max_length=300)
+    serv = models.CharField(max_length=300,choices=SERVIÇOS,default='-',validators=[sev_validator])
     preco = models.CharField(max_length=300)
     seg = models.BooleanField()
     ter = models.BooleanField()
