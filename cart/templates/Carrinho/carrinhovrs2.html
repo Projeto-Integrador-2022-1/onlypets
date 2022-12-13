@@ -33,35 +33,37 @@
                       </tr>
                     </thead>
                     <tbody>
+                      {% for s in servicos %}
                       <tr class="productitm">
-                        <td><img src="{% static 'Carrinhost/exm-sang.svg' %}" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
+                        <td>
+                          {% if s.serv == 'ES'%}
+                          <img src="/media/serv_default/exm-sang.svg" class="thumb">
+                          {% elif s.serv == 'RD' %}
+                          <img src="/media/serv_default/radiografia.svg" class="thumb">
+                          {% elif s.serv == 'VC' %}
+                          <img src="/media/serv_default/vacina.svg" class="thumb">
+                          {% elif s.serv == 'AG' %}
+                          <img src="/media/serv_default/rotina.svg" class="thumb">
+                          {% endif %}
+                        </td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput" name="{{s.id}}"></td>
+                        {% if s.serv == 'ES' %}
                         <td>Exame de Sangue</td>
-                        <td>R$120.00</td>
+                        {% elif s.serv == 'RD' %}
+                        <td>Radiografia</td>
+                        {% elif s.serv == 'VC' %}
+                        <td>Vacinação</td>
+                        {% elif s.serv == 'AG' %}
+                        <td>Avaliação Geral</td>
+                        {% endif %}
+                        <td>R${{s.preco}}</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png' %}" alt="X"></span></td>
                       </tr>
-                      <!-- <tr class="productitm">
-                        <td><img src="{% static 'Carrinhost/radiografia.svg' %}" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
-                        <td>Radiografia</td>
-                        <td>R$90,00</td>
-                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
-                      </tr>
-                      <tr class="productitm"> -->
+                      {% endfor %}
+
+
                         <!-- http://www.amazon.com/SpongeBob-SquarePants-The-First-Episodes/dp/B002DYJTVW -->
-                        <!-- <td><img src="{% static 'Carrinhost/vacina.svg' %}" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
-                        <td>Vacinação</td>
-                        <td>R$55.00</td>
-                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
-                      </tr>
-                      <tr class="productitm">
-                        <td><img src="{% static 'Carrinhost/rotina.svg' %}" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
-                        <td>Avaliação Geral</td>
-                        <td>R$80,00</td>
-                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
-                      </tr> -->
+        
                       <tr class="extracosts">
                         <td class="light">Custos Extras</td>
                         <td colspan="2" class="light"></td>

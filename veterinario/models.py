@@ -17,7 +17,7 @@ def sev_validator(valor):
 class Servico(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='servico')
     serv = models.CharField(max_length=300,choices=SERVIÇOS,default='-',validators=[sev_validator])
-    preco = models.CharField(max_length=300)
+    preco = models.DecimalField(max_digits=9999,decimal_places=2)
     seg = models.BooleanField()
     ter = models.BooleanField()
     qua = models.BooleanField()
@@ -27,4 +27,4 @@ class Servico(models.Model):
     horad = models.BooleanField()
     horat = models.BooleanField()
     def __str__(self):
-        return f'{self.nome}'
+        return f'{self.serv}'
