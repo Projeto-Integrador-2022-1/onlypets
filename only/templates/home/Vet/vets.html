@@ -25,7 +25,7 @@
         <div class="veterinarios">
             {% for v in vets %}
             <div class="veterinario_um">
-                <a href="{% static 'home/Vetst/veterinarios/joana.html' %}">
+                <a href={% url 'carrinho' v.id %}>
                     <button class="vet_um_button">
                         <div class="infos">
                             <img class="vet_um_imagem" src={{v.perfil.imagemVet.url}} alt="logo" width="150" height="150" style="border-radius: 20px;">

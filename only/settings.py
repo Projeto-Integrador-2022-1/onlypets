@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "pet",
     "pagamento",
     "veterinario",
+    "cart",
     
 ]
 

@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="{% static 'Carrinhost/carrinho.css' %}">
     <title>CARRINHO</title>
 </head>
 <body>
     <div class="container">
         <div class="container__main">
             <div class="container__main--topo">
-                <img class= "logo" src="./logocolorida.svg" alt="logo" width="200" height="200">
+                <img class= "logo" src="{% static 'Carrinhost/logocolorida.svg' %}" alt="logo" width="200" height="200">
             </div>
             <div class="voltar">
-                <a href="../TelaVeterinários/slc_vet.html"><button  id="voltar"><img src="./seta_voltar.svg"></button></a>
+                <a href={% url 'vet' request.session.vetid %}><button  id="voltar"><img src="{% static 'Carrinhost/seta_voltar.svg' %}"></button></a>
             </div>
             <div id="w">
                 <header id="title">
@@ -32,41 +33,35 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <!-- shopping cart contents -->
                       <tr class="productitm">
-                        <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-                        <td><img src="./exm-sang.svg" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
+                        <td><img src="{% static 'Carrinhost/exm-sang.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
                         <td>Exame de Sangue</td>
                         <td>R$120.00</td>
-                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png' %}" alt="X"></span></td>
                       </tr>
-                      <tr class="productitm">
-                        <!-- http://www.amazon.com/Stuff-My-Cat-The-Book/dp/0811855384 -->
-                        <td><img src="./radiografia.svg" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
+                      <!-- <tr class="productitm">
+                        <td><img src="{% static 'Carrinhost/radiografia.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
                         <td>Radiografia</td>
                         <td>R$90,00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
                       </tr>
-                      <tr class="productitm">
+                      <tr class="productitm"> -->
                         <!-- http://www.amazon.com/SpongeBob-SquarePants-The-First-Episodes/dp/B002DYJTVW -->
-                        <td><img src="./vacina.svg" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
+                        <!-- <td><img src="{% static 'Carrinhost/vacina.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
                         <td>Vacinação</td>
                         <td>R$55.00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
                       </tr>
                       <tr class="productitm">
-                        <!-- http://www.barnesandnoble.com/w/javascript-and-jquery-david-sawyer-mcfarland/1100405042 -->
-                        <td><img src="rotina.svg" class="thumb"></td>
-                        <td><input type="number" value="0" min="0" max="99" class="qtyinput"></td>
+                        <td><img src="{% static 'Carrinhost/rotina.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
                         <td>Avaliação Geral</td>
                         <td>R$80,00</td>
                         <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
-                      </tr>
-                      
-                      <!-- tax + subtotal -->
+                      </tr> -->
                       <tr class="extracosts">
                         <td class="light">Custos Extras</td>
                         <td colspan="2" class="light"></td>
@@ -164,13 +159,13 @@
                                       <i></i>
                                       <h2>Pagamento por Pix</h2>
                                       <p>
-                                        <img src="./qrcode.svg" alt="QR Code">
+                                        <img src="{% static 'Carrinhost/qrcode.svg' %}" alt="QR Code">
                                     </li>
                                     
                                 </td>
                             </tr>
                       <tr class="checkoutrow">
-                        <td colspan="5" class="checkout"><a href="../conf_pag/conf.html"><button id="submitbtn">Pagar</button></a></td>
+                        <td colspan="5" class="checkout"><a href=".{% static 'Carrinhost/conf_pag/conf.html' %}"><button id="submitbtn">Pagar</button></a></td>
                       </tr>
                     </tbody>
                   </table>
