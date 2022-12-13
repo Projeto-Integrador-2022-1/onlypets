@@ -119,12 +119,9 @@
                               <td colspan="2"><span class="thick">
                                   <select class="selecao">
                                       <option selected>*ESCOLHA O PET*</option>
-                                      <option>Rick</option>
-                                      <option>Fiona</option>
-                                      <option>Buffy</option>
-                                      <option>Samira</option>
-                                      <option>Lola</option>
-                                      <option>Branquinha</option>
+                                      {% for p in pets %}
+                                      <option>{{p.nome}}</option>
+                                      {% endfor %}
                                   </select>
                               </span>
                               </td>
