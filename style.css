@@ -8,6 +8,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: #354672;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .light-mode {
@@ -19,10 +21,6 @@ body {
 }
 
 .display-page {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     width: 100vw;
     max-height: 100%;
     min-height: 100vh;
@@ -101,7 +99,7 @@ body {
 
 .content {
     margin-inline: 40px;
-    width: 75%;
+    width: 75vw;
     height: 336px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -178,6 +176,7 @@ body {
 }
 
 .titulo {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     /* width: 1114px; */
@@ -189,6 +188,7 @@ body {
 }
 
 .titulo h1 {
+    background-color: red;
     width: 100%;
     text-align: center;
 }
@@ -225,7 +225,7 @@ body {
 }
 
 #services-img {
-    width: 506px;
+    width: 490px;
     /* background-color: wheat; */
 }
 
