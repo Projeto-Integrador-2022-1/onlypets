@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container__main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_topo {
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DBEEF2;
+}
+
+.container_topo h3:last-of-type {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+#user_name {
+    width: 155px;
+    height: 28px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 420;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    margin-left: 4vh;
+    width: 18vw;
+    height: 18vh;
+}
+
+.foto_user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: rgba(170, 163, 163, 0.65);
+}
+
+.container__main--topo--foto_user {
+    position: relative;
+    border-radius: 50%;
+}
+
+.Title_pag {
+    font-family: 'Josefin Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-block: 27px;
+    font-size: 100%;
+    border-radius: 15px;
+    border: 2px solid #D9A330;
+    height: 55px;
+    left: 22px;
+    top: 178px;
+}
+
+.sub_title{
+    font-family: 'Josefin Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.bloco_video{
+    background: rgba(170, 163, 163, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    height: 35vh;
+    margin-block: 2%;
+}
+
+.tutorial{
+    font-family: 'Josefin Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 20px;
+    font-size: 20px;
+
+}

@@ -6,13 +6,12 @@
 <head> 
 <TITLE>LOGIN</TITLE>
 
-<link rel="stylesheet" href="{% static 'Loginst/styles.css' %}">
+<link rel="stylesheet" href="{% static 'Loginst/styles.css' %}" >
 
 
 </head>
 <body>
 <div class="container">
-    {% url 'cadastro' as cadastro %}
 
     <div class="container__main">
         <div class="container__main--login">
@@ -22,13 +21,22 @@
             <div class="container__main--login--title">
                 ENTRAR
             </div>
-            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
-            <input type="password" name="senha" id="senha" placeholder="Senha">
-            <a href={{ cadastro }}>Cadastre-se aqui</a>
-            <button>ACESSAR</button>
-        </div>
         
-
+            <div>
+            <form method="post" class="forms">
+                {% csrf_token %}
+                {% for field in form %}
+                    {{field.errors}}
+                    {{field}}
+                {% endfor %}
+                <a href="{% url 'cadastro' %}">Cadastre-se aqui</a>
+                <a href="{% url 'vetcad' %}">Trabalhe Conosco</a>
+                <button type="submit">ACESSAR</button>
+    
+            </form>
+            
+        </div>
+    </div>
         <div class="container__main--animals">
             <div>
                 <div class="container__main--animals--patas-bottom">

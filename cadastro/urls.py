@@ -15,12 +15,11 @@ Including another URLconf
 """
 
 from django.urls import path
-from cadastro.views import HomeCad
+from cadastro.views import HomeCad,VetCad
 from django.conf import settings
 from django.conf.urls.static import static
-from login.views import HomeLogin
 
 urlpatterns = [
-    path('', HomeCad,name='home'),
-    path('login/', HomeLogin,name='login'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('', HomeCad,name='cadastro'),
+    path('vet/', VetCad,name='vetcad'),
+]

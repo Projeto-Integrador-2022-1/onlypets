@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>PAGAMENTO</title>
   <link rel="stylesheet" href="./pag.css">
+  <link rel="stylesheet" href="./cartao.scss">
 </html>
 </head>
 <body>
@@ -22,17 +23,50 @@
                 <h2 class ="subtitulo">SELECIONE A FORMA DE PAGAMENTO</h2>
             </div>
             <div class="formas">
-                <div class="cartao_div">
-                    <button class="cartao"><input name="form_pag" class="cartao_um" type="radio"></button>
+                <div class="card">
+                    <div class="content">
+                      <h1>Cartão de Crédito</h1>
+                      <label class="modal-open modal-label" for="modal-open">
+                             <h1>Selecionar Cartão</h1>
+                         </label>
+                      <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio" />
+                      <div class="modal">
+                        <label class="modal-label overlay">
+                                  <input type="radio" name="modal" value="close" class="modal-radio"/>
+                              </label>
+                        <div class="content">
+                          <div class="top">
+                            <label class="modal-label close-btn">
+                                      <input type="radio" name="modal" value="close" class="modal-radio"/>
+                                  </label>
+                          </div>
+                          <div class="titulo">
+                          </div>
+                          <h2 class="titulo">CARTÕES</h2>
+                          <div class="conteudo">
+                            <div class="cartoes">
+                                <button class="cartao"><input name="cartao" class="cartoes_pag" type="checkbox"></button>
+                                <h1 class="num">6857 **** **** 4978</h1>
+                            </div>
+                            <div class="parcela">
+                                <button class="parcelas"><input name="um" class="horario" type="radio">1X DE **</button>
+                                <button class="parcelas"><input name="um" class="horario" type="radio"> 2X DE **</button>
+                                <br>
+                            <div class="botoes">
+                              <button type="submit" class="select">SELECIONAR</button>
+                            </div>                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="pix_div">
                     <button class="pix"><input name="form_pag" class="pix_um" type="radio"></button>
-                </div>
-                <div class="boleto_div">
-                    <button class="boleto"><input name="form_pag" class="boleto_um" type="radio"></button>
+                    <img class="pix_img" src="./pix.svg" alt="logo" width="100" height="100">
+                    <h1 class="pix_titulo">PIX</h1>   
                 </div>
             </div>
-            <button class="select">SELECIONAR</button>
         </div>
     </div> 
 </body>

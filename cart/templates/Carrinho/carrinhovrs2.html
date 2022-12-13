@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Carrinhost/carrinho.css' %}">
+    <title>CARRINHO</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "logo" src="{% static 'Carrinhost/logocolorida.svg' %}" alt="logo" width="200" height="200">
+            </div>
+            <div class="voltar">
+                <a href={% url 'vet' request.session.vetid %}><button  id="voltar"><img src="{% static 'Carrinhost/seta_voltar.svg' %}"></button></a>
+            </div>
+            <div id="w">
+                <header id="title">
+                  <h1>CARRINHO DE COMPRAS</h1>
+                </header>
+                <div id="page">
+                  <table id="cart">
+                    <thead>
+                      <tr>
+                        <th class="first">FOTO</th>
+                        <th class="second">&nbsp;</th>
+                        <th class="third">PRODUTO</th>
+                        <th class="fourth">PREÇO</th>
+                        <th class="fifth">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="productitm">
+                        <td><img src="{% static 'Carrinhost/exm-sang.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
+                        <td>Exame de Sangue</td>
+                        <td>R$120.00</td>
+                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png' %}" alt="X"></span></td>
+                      </tr>
+                      <!-- <tr class="productitm">
+                        <td><img src="{% static 'Carrinhost/radiografia.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
+                        <td>Radiografia</td>
+                        <td>R$90,00</td>
+                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+                      </tr>
+                      <tr class="productitm"> -->
+                        <!-- http://www.amazon.com/SpongeBob-SquarePants-The-First-Episodes/dp/B002DYJTVW -->
+                        <!-- <td><img src="{% static 'Carrinhost/vacina.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
+                        <td>Vacinação</td>
+                        <td>R$55.00</td>
+                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+                      </tr>
+                      <tr class="productitm">
+                        <td><img src="{% static 'Carrinhost/rotina.svg' %}" class="thumb"></td>
+                        <td><input type="number" value="0" min="0" max="1" class="qtyinput"></td>
+                        <td>Avaliação Geral</td>
+                        <td>R$80,00</td>
+                        <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+                      </tr> -->
+                      <tr class="extracosts">
+                        <td class="light">Custos Extras</td>
+                        <td colspan="2" class="light"></td>
+                        <td>R$00.00</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr class="totalprice">
+                        <td class="light">Total:</td>
+                        <td colspan="2">&nbsp;</td>
+                        <td colspan="2"><span class="thick">R$00,00</span></td>
+                      </tr>
+                      <tr class="marcar-dia">
+                        <td class="light">Data:</td>
+                        <td colspan="2">&nbsp;</td>
+                        <td colspan="2"><span class="thick">
+                            <select class="selecao">
+                                <option selected>*ESCOLHA O DIA*</option>
+                                <option>SEG</option>
+                                <option>TER</option>
+                                <option>QUA</option>
+                                <option>QUI</option>
+                                <option>SEX</option>
+                            </select>
+                        </span>
+                        </td>
+                        </tr>
+                        <tr class="marcar-hora">
+                            <td class="light">Hora:</td>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="2"><span class="thick">
+                                <select class="selecao">
+                                    <option selected>*ESCOLHA A HORA*</option>
+                                    <option>08:00</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                </select>
+                            </span>
+                            </td>
+                            </tr>
+                            <tr class="escolher-pet">
+                              <td class="light">Pet para atendimento:</td>
+                              <td colspan="2">&nbsp;</td>
+                              <td colspan="2"><span class="thick">
+                                  <select class="selecao">
+                                      <option selected>*ESCOLHA O PET*</option>
+                                      <option>Rick</option>
+                                      <option>Fiona</option>
+                                      <option>Buffy</option>
+                                      <option>Samira</option>
+                                      <option>Lola</option>
+                                      <option>Branquinha</option>
+                                  </select>
+                              </span>
+                              </td>
+                              </tr>
+                            <tr class="pagamento">
+                                <td>
+                                  <ul>
+                                    <li>
+                                      <input type="checkbox" checked>
+                                      <i></i>
+                                      <h2>Cartão de Crédito</h2>
+                                      <p>
+                                        <input type="text" name="nome" id="usuario" placeholder="Nome do Titular">
+                                        <input type="number" name="cartao" id="cartao" placeholder="Número do Cartão">
+                                        Data de Vencimento:
+                                        <input type="date" name="validade" id="val_cartao" placeholder="Data de Vencimento">
+                                        <input type="number" name="cvv" id="seguranca_code" placeholder="CVV" min lenght="3" max lenght="3">
+                                        <select>
+                                          <option selected>Preço a Vista</option>
+                                          <option>1x de ** </option>
+                                          <option>2x de ** </option>
+                                          <option>3x de ** </option>
+                                        </select>
+                                        </p>
+                                    </li>                                   
+                                </td>
+                                <td>
+                                  &nbsp;
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>
+                                      <input type="checkbox" checked>
+                                      <i></i>
+                                      <h2>Pagamento por Pix</h2>
+                                      <p>
+                                        <img src="{% static 'Carrinhost/qrcode.svg' %}" alt="QR Code">
+                                    </li>
+                                    
+                                </td>
+                            </tr>
+                      <tr class="checkoutrow">
+                        <td colspan="5" class="checkout"><a href=".{% static 'Carrinhost/conf_pag/conf.html' %}"><button id="submitbtn">Pagar</button></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>   

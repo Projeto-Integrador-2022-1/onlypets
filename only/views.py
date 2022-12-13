@@ -1,10 +1,14 @@
 from django.shortcuts import render
 from clinicas import models
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+
 
 # Create your views here.
 def Splash(request):
     return render(request,"home/Splash/Splash.html")
 
+@login_required(login_url='login/')
 def Homep(request):
     return render(request,"home/Home/home.html")
 
@@ -21,7 +25,14 @@ def Clinica(request):
     }
     return render(request,"home/Clinica/clinicas.html",context=contexto)
 
-def Vet(request):
-    return render(request,"home/Vet/vets.html")
+def Vet(request,id):
+    veterinarios = User.objects.filter(perfil__Clinica = id)
+    contexto={
+        "vets" : veterinarios
+    }
+    request.session['vetid'] = id
+    return render(request,"home/Vet/vets.html",context=contexto)
+
+
 
 

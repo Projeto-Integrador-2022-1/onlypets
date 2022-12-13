@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 
 * {
     margin: 0;
@@ -37,11 +41,13 @@
     display: flex;
     align-items: center;
     color: #000000;
-    font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 .logo {
     margin-left: 8vh;
+    width: 18vw;
+    height: 18vh;
 }
 
 .foto_user {
@@ -49,8 +55,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-right: 25px;
     background: rgba(170, 163, 163, 0.65);
@@ -62,8 +68,7 @@
 }
 
 .Title_pag {
-    /* height: 75px;
-    font-size: x-large; */
+    font-family: 'Josefin Sans';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,9 +77,37 @@
     font-size: 100%;
     border-radius: 15px;
     border: 2px solid #D9A330;
-    /* width: 20rem; 
-    height: 35px; */
     height: 55px;
     left: 22px;
     top: 178px;
+}
+
+.sub_title{
+    font-family: 'Josefin Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.bloco_video{
+    background: rgba(170, 163, 163, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    height: 35vh;
+    margin-bottom: 20px;
+}
+
+.tutorial{
+    font-family: 'Josefin Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 20px;
+    font-size: 20px;
+
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    {% load static %}
+<head> 
+<TITLE>SERVIÇOS</TITLE>
+<link rel="stylesheet" href="{% static 'cadservst/cadservc.css' %}">
+</head>
+
+<body>
+<div class="container">
+    <div class="container__main">
+        <div class="container__main--login">
+            <div class="container__main--login--button">
+                <a href="../homepagevet.html"><button  id="container__main--login--voltar"><img src="{% static 'cadservst/seta_voltar.svg' %}"></button></a>
+            </div>
+            <div>
+                <img class= "container__main--login--logo" src="{% static 'cadservst/logo.svg' %}" alt="logo" width="100" height="100">
+            </div>
+            <div class="container__main--login--title">
+                CADASTRO
+            </div>
+            <div>
+                <form action="." method="post" class="Forms">
+                    {% csrf_token %}
+                    {{form.serv}}
+                    {{form.preco}}
+                    <h1 class="meusdias">Dias Disponíveis</h1>
+                    <div class="dias">
+                        <div>
+                            SEG
+                            <button class="dia">{{form.seg}}</button>
+                        </div>
+                        <div>
+                            TER
+                            <button class="dia">{{form.ter}}</button>
+                        </div>
+                        <div>
+                            QUA
+                            <button class="dia">{{form.qua}}</button>
+                        </div>
+                        <div>
+                            QUI
+                            <button class="dia">{{form.qui}}</button>
+                        </div>
+                        <div>
+                            SEX
+                            <button class="dia">{{form.sex}}</button>
+                        </div>
+                        <div>
+                            SAB
+                            <button class="dia">{{form.sab}}</button>
+                        </div>
+                    </div>
+                    <h1 class="meushorarios">Horários Disponíveis</h1>
+                    <div class="horarios">
+                        <div>
+                            8:00 - 12:00
+                            <button class="hora">{{form.horad}}</button>
+                        </div>
+                        <div>
+                            14:00 - 17:00
+                            <button class="hora">{{form.horat}}</button>
+                        </div>
+                    </div>
+                    {{form.user}}
+                        <button type="submit" class="botao_cadastrar" >CADASTRAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

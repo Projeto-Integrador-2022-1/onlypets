@@ -1,0 +1,62 @@
+ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    padding: 10px
+  }
+  a {
+    color: #BBBBB;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  #logo {
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: url() no-repeat center;
+    display: block;
+  }
+  nav {
+    float: right;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #menu-icon {
+    background: url(./download.jfif) no-repeat center;
+    display: hidden;
+    width: 32px;
+    height: 32px;
+  }
+  
+  @media only screen and (max-width: 640px) {
+  header {
+      position: absolute;
+  }
+  #menu-icon {
+      display: inline-block;
+  }
+  nav ul {
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background: #c5c5c5;
+      right: 10px;
+      top: 65px;
+      width: 35%;
+  }
+  nav:hover ul {
+      display: block;
+  }
+  nav li {
+      text-align: center;
+      width: 100%;
+      padding: 15px 0;
+      margin: 0;
+  }
+  }

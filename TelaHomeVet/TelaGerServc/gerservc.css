@@ -1,0 +1,256 @@
+*{
+    background-color: F9EDED;
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container__main--topo{
+    width: 100vw;
+    height: 187px;
+    left: -1px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    background: #DBEEF2;
+}
+#voltar{
+    position: absolute;
+    left:0px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 80px;
+    width: 80px;
+}
+
+#voltar:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body{
+  background: #ffffff;
+  font-family:Quicksand,sans-serif;
+  text-align:center;
+}
+.card {
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #3B6E61;
+    box-shadow: 3px 3px 18px -8px #263238;
+    color: #424242;
+    margin: 20px auto;
+    padding: 20px;
+  display: inline-block;
+}
+
+.modal-open {
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    top: 2vh;;
+    background: #4caf50;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.modal-label {
+    position: relative;
+}
+
+.modal-radio {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal3{
+  transform:translate(0,100%) scale(.9);
+}
+
+.modal4{
+  transform:scale(0) rotate(180deg);
+}
+
+#modal-open:checked + .modal {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open2:checked + .modal2{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open3:checked + .modal3{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open4:checked + .modal4{
+  transform:scale(1) rotate(0deg);
+  opacity:1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal .content {
+    position: absolute;
+    width: 70%;
+    height: 800px;
+    max-height: 100%;
+    top: 10%;
+    left: 15%;
+    background: #A3D9C9;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn:after,
+.close-btn:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+.dias{
+    position:relative;
+    top:5vh;
+}
+.dia{
+    width: 100px;
+    height: 100px;
+    border-radius: 21px;
+    transition: all;
+    transition: 500ms all;
+    border: 1px solid #D9A330;
+}
+.dias_semana{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+.dias input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+
+.conteudo{
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    top:5vh;
+}
+
+.subtitulo{
+    position: relative;
+    top:7vh;
+}
+.hora{
+    width: 204px;
+    height: 96px;
+    border-radius: 21px;
+    transition: all;
+    transition: 500ms all;
+    border: 1px solid #D9A330;
+}
+
+.horarios{
+    position: relative;
+    top:10vh;
+}
+.horario{
+    height: 100%;
+    width: 100%;
+    appearance: none;
+}
+.horarios input:checked{
+    background-color: #D9A330;
+    border-radius:21px ;
+}
+
+.excluir{
+    border-radius: 21px;
+    width: 200px;
+    height: 100px;
+    background-color: #ED7F7F;
+}
+
+.atualizar{
+    border-radius: 21px;    
+    width: 200px;
+    height: 100px;
+    background-color: #25991B;
+}
+.botoes{
+    border-radius: 21px;
+    position: relative;
+    top:5vh;
+    justify-content: space-between;
+    gap:100px;
+}

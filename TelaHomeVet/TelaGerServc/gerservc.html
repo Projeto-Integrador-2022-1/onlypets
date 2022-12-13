@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head> 
+<TITLE>SERVIÇOS</TITLE>
+<link rel="stylesheet" href="./gerservc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "container__main--topo--logo" src="../logocolorida.svg" alt="logo" width="200" height="200">
+            </div>
+            <div class="voltar">
+                <a href="../homepagevet.html" id="voltar"><img src="./seta_voltar.svg"></button></a>
+            </div>
+            <div class="card">
+                <div class="content">
+                  <h1>Exame de Sangue</h1>
+                  <label class="modal-open modal-label" for="modal-open">
+                         <p>Mostrar Detalhes</p>
+                     </label>
+                  <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio" />
+                  <div class="modal">
+                    <label class="modal-label overlay">
+                              <input type="radio" name="modal" value="close" class="modal-radio"/>
+                          </label>
+                    <div class="content">
+                      <div class="top">
+                        <label class="modal-label close-btn">
+                                  <input type="radio" name="modal" value="close" class="modal-radio"/>
+                              </label>
+                      </div>
+                      <div class="titulo">
+                        <h1 class="titulo_topo">EXAME DE SANGUE</h1>
+                      </div>
+                      <div class="conteudo">
+                        <h2>DIAS DA SEMANA</h2>
+                        <div class="dias">
+                            <button class="dia">SEG<input name="segunda" class="dias_semana" type="checkbox"></button>
+                            <button class="dia">TER<input name="terca" class="dias_semana" type="checkbox"></button>
+                            <button class="dia">QUA<input name="quarta" class="dias_semana" type="checkbox"></button>
+                            <button class="dia">QUI<input name="quinta" class="dias_semana" type="checkbox"></button>
+                            <button class="dia">SEX<input name="sexta" class="dias_semana" type="checkbox"></button>
+                            <button class="dia">SAB<input name="sabado" class="dias_semana" type="checkbox"></button>
+                        </div>
+                        <h2 class="subtitulo">HORÁRIOS DISPONÍVEIS</h2>
+                        <div class="horarios">
+                            <button class="hora">8:00 - 12:00<input name="manha" class="horario" type="checkbox"></button>
+                            <button class="hora">14:00 - 17:00<input name="tarde" class="horario" type="checkbox"></button>
+                            <br>
+                        <div class="botoes">
+                          <button type="submit" class="excluir">EXCLUIR</button>
+                          <button type="submit" class="atualizar">ATUALIZAR</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
