@@ -164,7 +164,7 @@
                                 </td>
                             </tr>
                       <tr class="checkoutrow">
-                        <td colspan="5" class="checkout"><a href=".{% static 'Carrinhost/conf_pag/conf.html' %}"><button id="submitbtn">Pagar</button></a></td>
+                        <td colspan="5" class="checkout"><a href={% url 'conf_pag' request.session.vetid %}><button id="submitbtn">Pagar</button></a></td>
                       </tr>
                     </tbody>
                   </table>

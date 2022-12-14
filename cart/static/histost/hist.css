@@ -1,0 +1,143 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__main--topo{
+width: 100vw;
+height: 187px;
+left: -1px;
+top: -5px;
+display: flex;
+align-items: center;
+
+background: #DBEEF2;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container__main{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#voltar{
+    position: absolute;
+    left:0px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 80px;
+    width: 80px;
+}
+
+#voltar:hover{
+    background: #D9A330;
+    color: #3B6E61;
+    cursor: pointer;;
+}
+/* generic */
+.list{
+    position: relative;
+    top:10vh;
+
+}
+body {
+    background-color:white;
+    color:#444;
+    font-family:sans-serif;
+  }
+  
+  .list ul:nth-child(odd) {
+    background-color:#88BEB8;
+  }
+  
+  .list ul:nth-child(even) {
+    background-color:#D9A330;
+  }
+  
+  /* big */
+  @media screen and (min-width:600px) {
+    
+    .list {
+      display:table;
+      margin:1em;
+    }
+   
+    .list ul {
+      display:table-row;
+    }
+    
+    .list ul:first-child li {
+      background-color:#444;
+      color:#fff;
+    }
+    
+    .list ul > li {
+      display:table-cell;
+      padding:.5em 1em;
+    }
+    
+  }
+  
+  /* small */
+  @media screen and (max-width:599px) {
+    
+    .list ul {
+      border:solid 1px #ccc;
+      display:block;
+      list-style:none;
+      margin:1em;
+      padding:.5em 1em;
+    }
+    
+    .list ul:first-child {
+      display:none;
+    }
+    
+    .list ul > li {
+      display:block;
+      padding:.25em 0;
+    }
+    
+    .list ul:nth-child(odd) > li + li {
+      border-top:solid 1px #ccc;
+    }
+    
+    .list ul:nth-child(even) > li + li {
+      border-top:solid 1px #eee;
+    }
+    
+    .list ul > li:before {
+      color:#000;
+      content:attr(data-label);
+      display:inline-block;
+      font-size:75%;
+      font-weight:bold;
+      text-transform:capitalize;
+      vertical-align:top;
+      width:50%;
+    }
+    
+    .list p {
+      margin:-1em 0 0 50%;
+    }
+    
+  }
+  
+  /* tiny */
+  @media screen and (max-width:349px) {
+      
+    .list ul > li:before {
+      display:block;
+    }
+    
+    .list p {
+      margin:0;
+    }
+    
+  }
+  

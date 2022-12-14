@@ -10,3 +10,9 @@ def Carrinho(request,id):
         "servicos" : servicos
     }
     return render(request,"Carrinho/carrinhovrs2.html",context=contexto)
+
+def conf_pag(request,id):
+    return render(request,"Conf_pagamento/conf.html")
+
+def histo(request,id):
+    return render(request,"histo/hist.html")

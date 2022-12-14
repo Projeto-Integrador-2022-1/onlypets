@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//PT-BR"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head> 
+<meta charset="UTF-8">
+<TITLE>CONFIRMAR PAGAMENTO</TITLE>
+<link rel="stylesheet" href="{% static 'Conf_pagamentst/conf.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__main--topo">
+                <img class= "container__main--topo--logo" src="{% static 'Conf_pagamentst/logocolorida.svg' %}" alt="logo" width="200" height="200">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="bloco">
+            <!-- Basic	 -->
+            <div class="pricing-card">
+                    <header class="pricing-card_header princing-card_header--basic">
+                        <h2 class="pricing-card_title">Pagamento Confirmado</h2>
+                        <span class="pricing-card_cost">:)</span>
+                    </header>
+                    
+                    <ul class="pricing-card_list-info">
+                        <li class="pricing-card_item">Para ter acesso a essa e as demais consultas marcadas, acesse o seu email ou no setor de <b>HISTÓRICO</b></li>
+                    </ul>
+                    <a href={% url 'histo' request.session.vetid %}><button class="btn btn--basic">Meu Histórico</button></a>
+                    <a href={% url 'home' %}><button class="btn btn--basic">Voltar à Página Inicial</button></a>
+                </div>
+    </div>
+</body>
